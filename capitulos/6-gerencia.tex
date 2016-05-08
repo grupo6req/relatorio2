@@ -1,0 +1,252 @@
+\chapter{Tópicos de Gerência de Requisitos}
+\label{management}
+
+\section{Rastreabilidade}
+
+\subsection{Introdução ao Conceito de Rastreabilidade}
+
+A rastreabilidade advém da necessidade de identificar as dependências entre os artefatos, já que eles se relacionam e se afetam ao longo do desenvolvimento do software. É notável que os requisitos também se relacionam, de forma que, alguns só podem ser implementados uma vez que outros já tenham sido sanados, sendo assim, é necessário identificar e controlar as interdependências entre os requisitos a fim de evitar possíveis erros que podem ocasionar grandes perdas e complicações para o desenvolvimento do \textit{software}. A rastreabilidade se dará justamente no controle dessas interdependências.
+
+Gotel e Finkelstein (1994) definem a rastreabilidade de requisitos como “a capacidade de descrever e seguir a vida de um requisito, em ambas as direções para a frente e para trás(\textit{forward and backward direction}), isso é, desde as suas origens, através do seu desenvolvimento e especificação, à sua subsequente implementação e utilização”.
+
+Rastrear um requisito para a frente (\textit{forward traceability}) significa “seguir as ligações de rastreabilidade para os artefatos que foram derivados do artefacto em consideração” (Winkler, Pilgrim, 2010).
+
+Rastrear um requisito para trás (\textit{backward traceability}) “refere-se à capacidade de seguir as ligações de rastreabilidade de um artefato específico de volta às suas origens de onde foi derivado” (Winkler \& Pilgrim, 2010) .
+
+A figura 8 demonstra as rastreabilidades introduzidas por Gotel e Finkelstein (1994), sendo elas a pré-rastreabilidade e a pós-rastreabilidade.
+
+\textbf{Pré-rastreabilidade}: “refere-se aos aspetos da existência de um requisito antes de ser incluído na especificação de requisitos” (Gotel \& Finkelstein, 1994) e “está focada em permitir uma melhor compreensão dos requisitos” (Dahlstedt \& Persson, 2005). “A pré-rastreabilidade é a base para gerir a evolução de um sistema, porque permite o levantamento das partes de especificação que são afetadas por uma mudança específica no pedido suscitado” (Dahlstedt \& Persson, 2005).
+
+\textbf{Pós-rastreabilidade}: “refere-se aos aspetos da existência de um requisito a partir do momento em que foi incluído na especificação de requisitos” (Gotel \& Finkelstein, 1994) e “está focada em permitir uma melhor compreensão e aceitação do atual \textit{software} de sistema” (Dahlstedt \& Persson, 2005).
+
+Dentre os estudos da rastreabilidade de \textit{software}, Ramesh e Edwards (1993) introduziram a rastreabilidade horizontal e vertical.
+
+\textbf{Rastreabilidade Horizontal}: trata de relacionar versões ou variantes do mesmo tipo de informação, por exemplo, entre requisitos ou entre componentes do sistema (Dahlstedt \& Persson,2005; Winkler \& Pilgrim, 2010).
+
+\textbf{Rastreabilidade Vertical}: preocupa-se em rastrear informação entre anteriores e subsequentes fases no processo de desenvolvimento, isto é, entre objetos de informação de diferentes tipos (Dahlstedt \& Persson, 2005; Winkler \& Pilgrim, 2010) . Por exemplo, uma relação entre um requisito e um elemento da conceção (Winkler \& Pilgrim, 2010).
+
+\subsection{Sobre a Rastreabilidade no RUP}
+
+Pelo própria definição de rastreabilidade do processo unificado, temos que: “A rastreabilidade é a capacidade de rastrear um elemento de projeto para outros elementos de projeto relacionados, especialmente aqueles relacionados a requisitos. Os elementos de projeto envolvidos na rastreabilidade são chamados de itens de rastreabilidade.  Os itens de rastreabilidade típicos incluem diferentes tipos de requisitos, elementos de modelo de análise e \textit{design}, produtos de trabalho de teste e materiais de treinamento e documentação de suporte ao usuário final”. ?. Conceito de rastreabilidade. Disponível em:%<http://mds.cultura.gov.br/core.base_rup/guidances/concepts/traceability_8F6B898D.html>. Acesso em: 05 de maio. 2016.
+
+A figura 10 a seguir demonstra esses itens comummente utilizados na rastreabilidade de um \textit{software}.
+
+Os itens tipicamente utilizados são:
+
+\begin{itemize}
+\item Necessidades dos envolvidos, documentados no documento de visão.
+\item Recurso do produto, documentados no documento de visão.
+\item Requisito suplementar, documentados em especificações suplementares.
+\item Casos de uso, documentados no documento de mesmo nome.
+\item Seção de caso de uso, documentados no documento de casos de uso.
+\item Elemento de Design documentados no documento de modelo de \textit{design}.
+\item Conjunto de Teste, documentados no documento de caso de teste.
+\end{itemize}
+
+Uma rastreabilidade típica pode ser vista pela figura 11 abaixo:
+
+Existem várias técnicas para se realizar a rastreabilidade no processo unificado, dentre as mais comuns estão as referências cruzadas e o uso de documentos. As técnicas que utilizam as referências cruzadas são mais simples de serem implementadas e compreendidas, podem utilizar numerações, indexação, \textit{tags} e matrizes de rastreabilidade. Já as técnicas que utilizam documentos, costumam usar \textit{templates} para os documentos e artefatos.
+
+No caso de referencias cruzadas, pode-se utilizar uma matriz de rastreabilidade, gerada por um \textit{software} de uso geral como uma planilha no Excel® ou em um \textit{software} específico como o Rational® RequisitePro®. Um exemplo de matriz de rastreabilidade pode ser visto pela tabela \ref{table1}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Projeto \textless nome\textgreater - Matriz de Rastreabilidade}}           \\ \hline
+\textbf{Requisito} & \textbf{Documento Fonte} & \multicolumn{1}{l|}{\textbf{Arquitetura}} & \textbf{Componente} & \textbf{Caso de Teste} \\ \hline
+                   &                 &                                  &            &               \\ \hline
+                   &                 &                                  &            &               \\ \hline
+\end{tabular}
+\label{table1}
+\caption{Rastreabilidade entre requisitos e seus correspondentes artefatos gerados}
+\end{table}
+
+O requisito pode ser expresso em linguagem natural e numerado sequencialmente, nas demais colunas, são indicados os artefatos relacionados ao requisito, onde a ordem correspondente é sempre se 1 para 1.
+
+A mesma técnica pode ser utilizada para referenciar dependência entre requisitos, como pode ser observado pela figura N.
+
+\subsection{Rastreabilidade Adotada no Projeto}
+
+Tendo em vista que cada requisito deve ser rastreável de volta a sua fonte e que ele também deve ser especificado de uma forma que permita o rastreamento para adiante do projeto, implementação, e testes, foi escolhida a utilização da rastreabilidade vertical especificada abaixo.
+
+Distribuiçao dos artefatos gerados:
+
+Identificação dos itens dos artefatos:
+
+\begin{table}[]
+\centering
+\label{artefacts-identifier}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Identificador}         & \textbf{Descrição}                  \\ \hline
+RN\textless número\textgreater  & Regra de Negócio                    \\ \hline
+RF\textless número\textgreater  & Requisito Funcional. Ex: RF0014     \\ \hline
+RNF\textless número\textgreater & Requisito Não Funcional. EX:RNF0365 \\ \hline
+UC\textless número\textgreater  & Caso de Uso. Ex:US1234              \\ \hline
+UCD\textless número\textgreater & Diagrama de Caso de Uso             \\ \hline
+TC\textless número \textgreater  & Caso de Teste.                     \\ \hline
+\end{tabular}
+\caption{Identificação dos artefatos}
+\end{table}
+
+\begin{itemize}
+\item \textbf{Atributos de Requisitos}: Características utilizadas para avaliar um requisito. Serão utilizados:
+
+\begin{itemize}
+\item Prioridade
+\item \textit Status
+\item Dificuldade
+\end{itemize}
+
+\item \textbf{Prioridade}: Define o quão importante é o requisito para o sistema em relação aos demais. Os de maior prioridade serão implementados antes em relação aos demais, isso para todos os níveis de prioridade, que são:
+
+\begin{itemize}
+\item Alta
+\item Média
+\item Baixa
+\end{itemize}
+
+\item \textbf{\textit{Status}}: Seguindo o mesmo exemplo de prioridade, em \textit{status} também serão utilizados 3 níveis que dirão o progresso das atividades relacionadas à um requisito:
+
+\begin{itemize}
+\item Completado
+\item Em andamento
+\item Não inicializado
+\end{itemize}
+
+\item \textbf{Dificuldade}: Serve de indicativo para uma possível dificuldade na implementação dos requisitos. É um atributo fundamental para o planejamento das iterações. Também será dividido em 3 níveis:
+
+\begin{itemize}
+\item Alta
+\item Média
+\item Baixa
+\end{itemize}
+\end{itemize}
+
+Para servir de exemplo, segue-se uma tabela de atributos:
+
+\begin{table}[h]
+\centering
+\label{requirements-qualities}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Identificador} & \textbf{Nome} & \textbf{Prioridade} & \textbf{Dificuldade} & \textbf{Status} \\ \hline
+                       &               &                     &                      &                 \\ \hline
+\end{tabular}
+\caption{Atributos dos Requisitos}
+\end{table}
+
+Para ter um maior controle sobre o fluxo do relacionamento entre os artefatos e os requisitos, será utilizada uma matriz de rastreabilidade como o modelo abaixo:
+
+\begin{table}[h]
+\centering
+\label{itens-traceability}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\multicolumn{5}{|c|}{\textbf{Alvos}}                  \\ \hline
+\multirow{4}{*}{\textbf{Fontes}} & F/A & A1 & A2 & A3 \\ \cline{2-5} 
+                                 & F1  & X  &    & X  \\ \cline{2-5} 
+                                 & F2  &    & X  &    \\ \cline{2-5} 
+                                 & F3  &    &    & X  \\ \hline
+\end{tabular}
+\caption{Modelo de como será a disposição dos itens na matriz de rastreabilidade}
+\end{table}
+
+Segue um exemplo também de uma matriz de rastreabilidade entre casos de uso e requisitos:
+
+\section{Modelos de Maturidade}
+
+\subsection{Introdução à Modelos de Maturidade}
+
+Inicialmente, para entender melhor o contexto de Modelo de Maturidade, é necessário compreender o conceito de Modelo de Maturidade, em que ele é responsável por analisar e avaliar cada processo de uma estrutura organizacional de forma a aplicar o processo de melhoria em cada um dos níveis da empresa avaliada. Em outras palavras, ele é responsável por avaliar a capacidade de processos na realização de seus objetivos, localizar oportunidades de melhoria de produtividade e de redução de custos e planejar e monitorar as ações de melhoria contínua dos processos empresariais.
+
+\subsection{CMMI}
+
+“O CMMI é uma metodologia criada pela SEI (\textit{Software Engineering Institute}) para ser um guia destinado a melhorar os processos organizacionais e a habilidade desses em gerenciar o desenvolvimento, a aquisição e a manutenção de produtos e serviços. O CMMI organiza as práticas, que já são consideradas efetivas, em uma estrutura que visa auxiliar a organização a estabelecer prioridades para melhoria e também fornece um guia para a implementação dessas melhorias.”[1]
+O CMMI traz consigo grandes possibilidades, tanto para melhoria em projetos, elevando o nível da qualidade e cumprindo melhor os prazos estipulados.
+O CMMI se divide em 5 estágios:
+
+\begin{itemize}
+\item Otimização
+\item Quantitativamente Gerenciado
+\item Definido
+\item Gerenciado
+\item Realizado
+\end{itemize}
+
+Os níveis em que a engenharia de requisitos está presente são Gerenciado e Definido. Nesses níveis, a ER subdivide em 6 processos:
+
+\begin{enumerate}
+\item Gerência de Requisitos
+\item Desenvolvimento de Requisitos
+\item Solução Técnica
+\item Integração do Produto
+\item Verificação
+\item Validação
+\end{enumerate}
+
+\subsubsection{Vantagens e Desvantagens}
+
+\begin{itemize}
+	\item Vantagens
+		\begin{itemize}
+			\item Reconhecimento internacional
+			\item Eliminação de inconsistências
+			\item Utilização de terminologia comum
+			\item Desenvolvimento de \textit{software} com qualidade, garantindo cumprimento de prazos e atendendo às necessidades dos clientes 
+			\item Consistência com a norma ISO-15504 (norma que define o processo de desenvolvimento de \textit{software} de acordo com os níveis de capacidade para cada processo de acordo com o CMMI (CORTES, 2004)
+			\item Integração de sistemas
+			\item Métricas e análises
+			\item Identificação de riscos
+		\end{itemize}
+	\item Desvantagens
+		\begin{itemize}
+			\item Não há nenhuma empresa brasileira certificada pelo SEI para auditoria, sendo necessário que a certificação seja criada nos Estados Unidos e trazida por um \textit{lead assessor}
+			\item Os preços de avaliação do CMMI podem variar de 36 a 60 mil dólares. Se a empresa necessitar de assessoria, o preço pode chegar à cerca de 125 mil dólares por ano (CMMI, 2015). Por esse motivo, pequenas e médias empresas tem problema em adotar esse modelo.
+		\end{itemize}
+\end{itemize}
+
+\subsection{MPS-BR}
+
+“É um movimento de melhoria de software voltado para a realidade brasileira. O programa é coordenado pela Associação para promoção de Software brasileiro (SOFTEX) com início de desenvolvimento em 2003.”
+
+É voltado para a realidade brasileira, 	além disso, é adequado para micro, pequenas e medias empresas alcançarem melhorias no processo de construção de um software.
+
+Os níveis definidos no MPS-BR são:
+
+\begin{itemize}
+	\item A - Em otimização
+	\item B - Gerenciado Quantitativamente
+	\item C - Definido
+	\item D - Largamento Definido
+	\item E - Parcialmente Definido
+	\item F - Gerenciado
+	\item G - Parcialmente Gerenciado
+\end{itemize}
+
+O foco da ER está nos níveis G e D.
+
+\subsubsection{Vantagens e Desvantagens}
+
+\begin{itemize}
+	\item Vantagens
+		\begin{itemize}
+			\item Adequado à realidade brasileira (implementação acessível à micro, pequenas e médias empresas)
+			\item Possui compatibilidade com o CMMI (baseado nas normas ISO 12207 e 15504)
+			\item Integração universidade-empresa
+			\item Avaliações feitas por empresas brasileiras
+			\item Custo relativamente pequeno (cerca de 72 mil reais para uma empresa nível G ser habilitada como nível F)
+			\item Avaliação rápida (feitas em até 5 dias)
+		\end{itemize}
+	\item Desvantagens
+		\begin{itemize}
+			\item A certificação não é competitiva o suficiente para tornar a empresa reconhecida internacionalmente
+			\item Foco principal em pequenas empresas
+		\end{itemize}
+\end{itemize}
+
+\subsection{Por que utilizar o MPS-BR para modelar o processo da Engrena?}
+
+Enquanto o CMMI oferece competitividade e reconhecimento internacional, ele é um modelo extremamente caro para utilizar em um ambiente de Empresa Júnior.
+Já o MPS-BR é adaptado a realidade brasileira e facilitando a implementação gradual dos processos de gerência, focado na gerência de requisitos e desenvolvimento de requisitos, com preços acessíveis e objetivos esperados, com divisões claras que facilitam a visibilidade dos resultados de melhoria de processos em prazos mais curtos.

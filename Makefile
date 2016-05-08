@@ -1,4 +1,4 @@
-TARGET = TCC_FGA.pdf
+TARGET = Requisitos.pdf
 
 BIBTEX = bibtex
 LATEX = latex
