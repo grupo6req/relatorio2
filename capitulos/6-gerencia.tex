@@ -5,49 +5,91 @@
 
 \subsection{Introdução ao Conceito de Rastreabilidade}
 
-A rastreabilidade advém da necessidade de identificar as dependências entre os artefatos, já que eles se relacionam e se afetam ao longo do desenvolvimento do software. É notável que os requisitos também se relacionam, de forma que, alguns só podem ser implementados uma vez que outros já tenham sido sanados, sendo assim, é necessário identificar e controlar as interdependências entre os requisitos a fim de evitar possíveis erros que podem ocasionar grandes perdas e complicações para o desenvolvimento do \textit{software}. A rastreabilidade se dará justamente no controle dessas interdependências.
+A rastreabilidade advém da necessidade de identificar as dependências entre os artefatos, já que eles relacionam-se e afetam-se ao longo do desenvolvimento do \textit{software}. É notável que os requisitos mantém também dependência entre si de forma que alguns só podem ser implementados após outros. Sendo assim, é necessário identificar e controlar essas relações entre os requisitos com o intuito de evitar possíveis erros catastróficos e complicações para o desenvolvimento. A rastreabilidade é precisamente o que permite obter essa identificação e controle.
 
-Gotel e Finkelstein (1994) definem a rastreabilidade de requisitos como “a capacidade de descrever e seguir a vida de um requisito, em ambas as direções para a frente e para trás(\textit{forward and backward direction}), isso é, desde as suas origens, através do seu desenvolvimento e especificação, à sua subsequente implementação e utilização”.
+~\cite{gotel} definem a rastreabilidade de requisitos como “a capacidade de descrever e seguir a vida de um requisito, em ambas as direções para frente e para trás(\textit{forward and backward direction}), isso é, desde as suas origens, através do seu desenvolvimento e especificação, à sua subsequente implementação e utilização”.
 
-Rastrear um requisito para a frente (\textit{forward traceability}) significa “seguir as ligações de rastreabilidade para os artefatos que foram derivados do artefacto em consideração” (Winkler, Pilgrim, 2010).
+Rastrear um requisito para frente (\textit{forward traceability}) significa “seguir as ligações de rastreabilidade para os artefatos que foram derivados do artefacto em consideração”.~\cite{winkler}
 
-Rastrear um requisito para trás (\textit{backward traceability}) “refere-se à capacidade de seguir as ligações de rastreabilidade de um artefato específico de volta às suas origens de onde foi derivado” (Winkler \& Pilgrim, 2010) .
+Rastrear um requisito para trás (\textit{backward traceability}) “refere-se à capacidade de seguir as ligações de rastreabilidade de um artefato específico de volta às suas origens de onde foi derivado”.~\cite{winkler}
 
-A figura 8 demonstra as rastreabilidades introduzidas por Gotel e Finkelstein (1994), sendo elas a pré-rastreabilidade e a pós-rastreabilidade.
+A figura \ref{back-and-foward} demonstra as pré-rastreabilidades e pós-rastreabilidades, introduzidas por ~\cite{gotel}.
 
-\textbf{Pré-rastreabilidade}: “refere-se aos aspetos da existência de um requisito antes de ser incluído na especificação de requisitos” (Gotel \& Finkelstein, 1994) e “está focada em permitir uma melhor compreensão dos requisitos” (Dahlstedt \& Persson, 2005). “A pré-rastreabilidade é a base para gerir a evolução de um sistema, porque permite o levantamento das partes de especificação que são afetadas por uma mudança específica no pedido suscitado” (Dahlstedt \& Persson, 2005).
+\begin{figure}[htb]
+\centering
+  \includegraphics[keepaspectratio=true,scale=0.5]
+  {figuras/rastreabilidade_frente_tras.eps}
+  \caption{Rastreabilidade pra frente e pra trás ~\cite{dahlstedt}}
+  \label{back-and-foward}
+\end{figure}
 
-\textbf{Pós-rastreabilidade}: “refere-se aos aspetos da existência de um requisito a partir do momento em que foi incluído na especificação de requisitos” (Gotel \& Finkelstein, 1994) e “está focada em permitir uma melhor compreensão e aceitação do atual \textit{software} de sistema” (Dahlstedt \& Persson, 2005).
+\clearpage{}
 
-Dentre os estudos da rastreabilidade de \textit{software}, Ramesh e Edwards (1993) introduziram a rastreabilidade horizontal e vertical.
+\textbf{Pré-rastreabilidade}: “refere-se aos aspetos da existência de um requisito antes de ser incluído na especificação de requisitos” ~\cite{gotel} e “está focada em permitir uma melhor compreensão dos requisitos” ~\cite{persson}. “A pré-rastreabilidade é a base para gerir a evolução de um sistema, porque permite o levantamento das partes de especificação que são afetadas por uma mudança específica no pedido suscitado”.~\cite{persson}
 
-\textbf{Rastreabilidade Horizontal}: trata de relacionar versões ou variantes do mesmo tipo de informação, por exemplo, entre requisitos ou entre componentes do sistema (Dahlstedt \& Persson,2005; Winkler \& Pilgrim, 2010).
+\textbf{Pós-rastreabilidade}: “refere-se aos aspetos da existência de um requisito a partir do momento em que foi incluído na especificação de requisitos” ~\cite{gotel} e “está focada em permitir uma melhor compreensão e aceitação do atual \textit{software} de sistema”. ~\cite{persson}
 
-\textbf{Rastreabilidade Vertical}: preocupa-se em rastrear informação entre anteriores e subsequentes fases no processo de desenvolvimento, isto é, entre objetos de informação de diferentes tipos (Dahlstedt \& Persson, 2005; Winkler \& Pilgrim, 2010) . Por exemplo, uma relação entre um requisito e um elemento da conceção (Winkler \& Pilgrim, 2010).
+Dentre os estudos da rastreabilidade de \textit{software}, ~\cite{ramesh} introduziram a rastreabilidade horizontal e vertical.
+
+\begin{figure}[htb]
+\centering
+  \includegraphics[keepaspectratio=true,scale=0.5]
+  {figuras/rastreabilidade_horizontal.eps}
+  \caption{Rastreabilidade horizontal e vertical ~\cite{genvigir}}
+  \label{sideways}
+\end{figure}
+
+\clearpage{}
+
+
+\textbf{Rastreabilidade Horizontal}: trata de relacionar versões ou variantes do mesmo tipo de informação, por exemplo, entre requisitos ou entre componentes do sistema. ~\cite{persson}~\cite{winkler}
+
+\textbf{Rastreabilidade Vertical}: preocupa-se em rastrear informação entre anteriores e subsequentes fases no processo de desenvolvimento, isto é, entre objetos de informação de diferentes tipos ~\cite{persson}~\cite{winkler}. Por exemplo, uma relação entre um requisito e um elemento da conceção.~\cite{winkler}
 
 \subsection{Sobre a Rastreabilidade no RUP}
 
-Pelo própria definição de rastreabilidade do processo unificado, temos que: “A rastreabilidade é a capacidade de rastrear um elemento de projeto para outros elementos de projeto relacionados, especialmente aqueles relacionados a requisitos. Os elementos de projeto envolvidos na rastreabilidade são chamados de itens de rastreabilidade.  Os itens de rastreabilidade típicos incluem diferentes tipos de requisitos, elementos de modelo de análise e \textit{design}, produtos de trabalho de teste e materiais de treinamento e documentação de suporte ao usuário final”. ?. Conceito de rastreabilidade. Disponível em:%<http://mds.cultura.gov.br/core.base_rup/guidances/concepts/traceability_8F6B898D.html>. Acesso em: 05 de maio. 2016.
+Pelo própria definição de rastreabilidade do processo unificado: “A rastreabilidade é a capacidade de rastrear um elemento de projeto para outros elementos de projeto relacionados, especialmente aqueles relacionados a requisitos. Os elementos de projeto envolvidos na rastreabilidade são chamados de itens de rastreabilidade.  Os itens de rastreabilidade típicos incluem diferentes tipos de requisitos, elementos de modelo de análise e \textit{design}, produtos de trabalho de teste e materiais de treinamento e documentação de suporte ao usuário final”.~\cite{rup1}
 
-A figura 10 a seguir demonstra esses itens comummente utilizados na rastreabilidade de um \textit{software}.
+A figura \ref{common-itens} a seguir demonstra esses itens comummente utilizados na rastreabilidade de um \textit{software}.
+
+\begin{figure}[htb]
+\centering
+  \includegraphics[keepaspectratio=true,scale=0.7]
+  {figuras/itens_comuns.eps}
+  \caption{Itens comumente utilizados na rastreabilidade.~\cite{rup1}}
+  \label{common-itens}
+\end{figure}
+
+\clearpage{}
+
 
 Os itens tipicamente utilizados são:
 
 \begin{itemize}
-\item Necessidades dos envolvidos, documentados no documento de visão.
-\item Recurso do produto, documentados no documento de visão.
-\item Requisito suplementar, documentados em especificações suplementares.
-\item Casos de uso, documentados no documento de mesmo nome.
-\item Seção de caso de uso, documentados no documento de casos de uso.
-\item Elemento de Design documentados no documento de modelo de \textit{design}.
-\item Conjunto de Teste, documentados no documento de caso de teste.
+\item Necessidades dos envolvidos, documentados no Documento de Visão.
+\item Recurso do produto, documentados no Documento de Visão.
+\item Requisito suplementar, documentados em Especificações Suplementares.
+\item Casos de uso, documentados no Documento de Casos de Uso.
+\item Seção de caso de uso, documentados no Documento de Casos de Uso.
+\item Elemento de Design documentados no documento de Modelo de \textit{Design}.
+\item Conjunto de Teste, documentados no documento de Caso de Teste.
 \end{itemize}
 
-Uma rastreabilidade típica pode ser vista pela figura 11 abaixo:
+Uma rastreabilidade típica pode ser vista pela figura \ref{common-tracebility} abaixo:
 
-Existem várias técnicas para se realizar a rastreabilidade no processo unificado, dentre as mais comuns estão as referências cruzadas e o uso de documentos. As técnicas que utilizam as referências cruzadas são mais simples de serem implementadas e compreendidas, podem utilizar numerações, indexação, \textit{tags} e matrizes de rastreabilidade. Já as técnicas que utilizam documentos, costumam usar \textit{templates} para os documentos e artefatos.
+\begin{figure}[htb]
+\centering
+  \includegraphics[keepaspectratio=true,scale=0.9]
+  {figuras/rastreabilidade_tipica.eps}
+  \caption{Rastreabilidade típica utilizada no RUP.~\cite{rup1}}
+  \label{common-tracebility}
+\end{figure}
 
-No caso de referencias cruzadas, pode-se utilizar uma matriz de rastreabilidade, gerada por um \textit{software} de uso geral como uma planilha no Excel® ou em um \textit{software} específico como o Rational® RequisitePro®. Um exemplo de matriz de rastreabilidade pode ser visto pela tabela \ref{table1}.
+\clearpage{}
+
+Existem várias técnicas para realizar a rastreabilidade no processo unificado, dentre as mais comuns estão as referências cruzadas e o uso de documentos. As técnicas que utilizam as referências cruzadas são mais simples de serem implementadas e compreendidas, podendo utilizar numerações, indexação, \textit{tags} e matrizes de rastreabilidade. Já as técnicas que utilizam documentos, costumam usar \textit{templates} para os documentos e artefatos.
+
+No caso de referências cruzadas, pode-se utilizar uma matriz de rastreabilidade, gerada por um \textit{software} de uso geral como uma planilha no Excel® ou em um \textit{software} específico como o Rational® RequisitePro®. Um exemplo de matriz de rastreabilidade pode ser visto pela tabela \ref{table1}.
 
 \begin{table}[h]
 \centering
@@ -58,19 +100,37 @@ No caso de referencias cruzadas, pode-se utilizar uma matriz de rastreabilidade,
                    &                 &                                  &            &               \\ \hline
                    &                 &                                  &            &               \\ \hline
 \end{tabular}
-\label{table1}
 \caption{Rastreabilidade entre requisitos e seus correspondentes artefatos gerados}
+\label{table1}
 \end{table}
 
-O requisito pode ser expresso em linguagem natural e numerado sequencialmente, nas demais colunas, são indicados os artefatos relacionados ao requisito, onde a ordem correspondente é sempre se 1 para 1.
+O requisito pode ser expresso em linguagem natural e numerado sequencialmente. Nas demais colunas, são indicados os artefatos relacionados ao requisito, onde a ordem correspondente é sempre de 1 para 1.
 
-A mesma técnica pode ser utilizada para referenciar dependência entre requisitos, como pode ser observado pela figura N.
+A mesma técnica pode ser utilizada para referenciar dependência entre requisitos, como pode ser observado pela figura \ref{matrix_requirement}.
+
+\begin{figure}[htb]
+\centering
+  \includegraphics[keepaspectratio=true,scale=0.7]
+  {figuras/matriz_rastreabilidade2.eps}
+  \caption{Matriz de  rastreabilidade  entre  Requisitos  Funcionais  e  Não Funcionais.}
+  \label{matrix_requirement}
+\end{figure}
+
+\clearpage{}
 
 \subsection{Rastreabilidade Adotada no Projeto}
 
-Tendo em vista que cada requisito deve ser rastreável de volta a sua fonte e que ele também deve ser especificado de uma forma que permita o rastreamento para adiante do projeto, implementação, e testes, foi escolhida a utilização da rastreabilidade vertical especificada abaixo.
+Considerando a necessidade de cada requisito ser rastreável à sua fonte e seu uso durante o projeto em implementações e testes, por exemplo, foi escolhido a utilização da rastreabilidade vertical especificada abaixo.
 
-Distribuiçao dos artefatos gerados:
+Distribuição dos artefatos gerados:
+
+\begin{figure}[htb]
+\centering
+  \includegraphics[keepaspectratio=true,scale=0.7]
+  {figuras/arvore_rastreabilidade.eps}
+  \caption{Árvore de rastreabilidade}
+  \label{matrix_requirement}
+\end{figure}
 
 Identificação dos itens dos artefatos:
 
@@ -155,16 +215,24 @@ Para ter um maior controle sobre o fluxo do relacionamento entre os artefatos e 
 
 Segue um exemplo também de uma matriz de rastreabilidade entre casos de uso e requisitos:
 
+\begin{figure}[htb]
+\centering
+  \includegraphics[keepaspectratio=true,scale=0.5]
+  {figuras/casos_de_uso.eps}
+  \caption{Casos de Uso e Requisitos.~\cite{dev1}}
+  \label{uc-requirements}
+\end{figure}
+
 \section{Modelos de Maturidade}
 
 \subsection{Introdução à Modelos de Maturidade}
 
-Inicialmente, para entender melhor o contexto de Modelo de Maturidade, é necessário compreender o conceito de Modelo de Maturidade, em que ele é responsável por analisar e avaliar cada processo de uma estrutura organizacional de forma a aplicar o processo de melhoria em cada um dos níveis da empresa avaliada. Em outras palavras, ele é responsável por avaliar a capacidade de processos na realização de seus objetivos, localizar oportunidades de melhoria de produtividade e de redução de custos e planejar e monitorar as ações de melhoria contínua dos processos empresariais.
+Um modelo de maturidade é responsável por analisar e avaliar cada processo de uma estrutura organizacional de forma a melhorar o mesmo em cada nível da empresa avaliada. Em outras palavras, ele é responsável por avaliar a capacidade de processos na realização de seus objetivos, localizar oportunidades de melhoria de produtividade, redução de custos e planejar e monitorar as ações de melhoria contínua dos processos empresariais.
 
 \subsection{CMMI}
 
-“O CMMI é uma metodologia criada pela SEI (\textit{Software Engineering Institute}) para ser um guia destinado a melhorar os processos organizacionais e a habilidade desses em gerenciar o desenvolvimento, a aquisição e a manutenção de produtos e serviços. O CMMI organiza as práticas, que já são consideradas efetivas, em uma estrutura que visa auxiliar a organização a estabelecer prioridades para melhoria e também fornece um guia para a implementação dessas melhorias.”[1]
-O CMMI traz consigo grandes possibilidades, tanto para melhoria em projetos, elevando o nível da qualidade e cumprindo melhor os prazos estipulados.
+“O CMMI é uma metodologia criada pela \textit{Software Engineering Institute} (SEI) para ser um guia destinado a melhorar os processos organizacionais e habilidade desses em gerenciar o desenvolvimento, a aquisição e a manutenção de produtos e serviços. O CMMI organiza as práticas, que já são consideradas efetivas, em uma estrutura que visa auxiliar a organização a estabelecer prioridades para melhoria e também fornece um guia para a implementação dessas melhorias.”[1]
+O CMMI traz consigo grandes possibilidades para melhoria em projetos, elevando o nível da qualidade e cumprindo melhor os prazos estipulados.
 O CMMI se divide em 5 estágios:
 
 \begin{itemize}
@@ -172,7 +240,7 @@ O CMMI se divide em 5 estágios:
 \item Quantitativamente Gerenciado
 \item Definido
 \item Gerenciado
-\item Realizado
+\item Inicial
 \end{itemize}
 
 Os níveis em que a engenharia de requisitos está presente são Gerenciado e Definido. Nesses níveis, a ER subdivide em 6 processos:
@@ -209,7 +277,7 @@ Os níveis em que a engenharia de requisitos está presente são Gerenciado e De
 
 \subsection{MPS-BR}
 
-“É um movimento de melhoria de software voltado para a realidade brasileira. O programa é coordenado pela Associação para promoção de Software brasileiro (SOFTEX) com início de desenvolvimento em 2003.”
+“É um movimento de melhoria de software voltado para a realidade brasileira. O programa é coordenado pela Associação para promoção de Software brasileiro (SOFTEX) com início de desenvolvimento em 2003.”~\cite{softex}
 
 É voltado para a realidade brasileira, 	além disso, é adequado para micro, pequenas e medias empresas alcançarem melhorias no processo de construção de um software.
 
@@ -249,4 +317,4 @@ O foco da ER está nos níveis G e D.
 \subsection{Por que utilizar o MPS-BR para modelar o processo da Engrena?}
 
 Enquanto o CMMI oferece competitividade e reconhecimento internacional, ele é um modelo extremamente caro para utilizar em um ambiente de Empresa Júnior.
-Já o MPS-BR é adaptado a realidade brasileira e facilitando a implementação gradual dos processos de gerência, focado na gerência de requisitos e desenvolvimento de requisitos, com preços acessíveis e objetivos esperados, com divisões claras que facilitam a visibilidade dos resultados de melhoria de processos em prazos mais curtos.
+Já o MPS-BR é adaptado à realidade brasileira, facilitando a implementação gradual dos processos de gerência, focado na gerência de requisitos e desenvolvimento de requisitos. Implementação essa que conta com preços mais acessíveis e objetivos esperados, com divisões claras que facilitam a visibilidade dos resultados da melhoria de processos em prazos mais curtos.
