@@ -50,13 +50,13 @@ Dentre os estudos da rastreabilidade de \textit{software}, ~\cite{ramesh} introd
 
 Pelo própria definição de rastreabilidade do processo unificado: “A rastreabilidade é a capacidade de rastrear um elemento de projeto para outros elementos de projeto relacionados, especialmente aqueles relacionados a requisitos. Os elementos de projeto envolvidos na rastreabilidade são chamados de itens de rastreabilidade.  Os itens de rastreabilidade típicos incluem diferentes tipos de requisitos, elementos de modelo de análise e \textit{design}, produtos de trabalho de teste e materiais de treinamento e documentação de suporte ao usuário final”.~\cite{rup1}
 
-A figura \ref{common-itens} a seguir demonstra esses itens comummente utilizados na rastreabilidade de um \textit{software}.
+A figura \ref{common-itens} a seguir demonstra esses itens normalmente utilizados na rastreabilidade de um \textit{software}.
 
 \begin{figure}[htb]
 \centering
   \includegraphics[keepaspectratio=true,scale=0.7]
   {figuras/itens_comuns.eps}
-  \caption{Itens comumente utilizados na rastreabilidade.~\cite{rup1}}
+  \caption{Itens normalmente utilizados na rastreabilidade.~\cite{rup1}}
   \label{common-itens}
 \end{figure}
 
@@ -120,7 +120,7 @@ A mesma técnica pode ser utilizada para referenciar dependência entre requisit
 
 \subsection{Rastreabilidade Adotada no Projeto}
 
-Considerando a necessidade de cada requisito ser rastreável à sua fonte e seu uso durante o projeto em implementações e testes, por exemplo, foi escolhido a utilização da rastreabilidade vertical especificada abaixo.
+Considerando a necessidade de cada requisito ser rastreável à sua fonte e seu uso durante o projeto em implementações e testes, por exemplo, foi escolhida a utilização da rastreabilidade vertical especificada abaixo.
 
 Distribuição dos artefatos gerados:
 
@@ -145,7 +145,7 @@ RF\textless número\textgreater  & Requisito Funcional. Ex: RF0014     \\ \hline
 RNF\textless número\textgreater & Requisito Não Funcional. EX:RNF0365 \\ \hline
 UC\textless número\textgreater  & Caso de Uso. Ex:US1234              \\ \hline
 UCD\textless número\textgreater & Diagrama de Caso de Uso             \\ \hline
-TC\textless número \textgreater  & Caso de Teste.                     \\ \hline
+TC\textless número\textgreater  & Caso de Teste.                     \\ \hline
 \end{tabular}
 \caption{Identificação dos artefatos}
 \end{table}
@@ -167,7 +167,7 @@ TC\textless número \textgreater  & Caso de Teste.                     \\ \hline
 \item Baixa
 \end{itemize}
 
-\item \textbf{\textit{Status}}: Seguindo o mesmo exemplo de prioridade, em \textit{status} também serão utilizados 3 níveis que dirão o progresso das atividades relacionadas à um requisito:
+\item \textbf{\textit{Status}}: Seguindo o mesmo exemplo de prioridade, em \textit{status} também serão utilizados 3 níveis que irão ditar o progresso das atividades relacionadas à um requisito:
 
 \begin{itemize}
 \item Completado
@@ -231,7 +231,7 @@ Um modelo de maturidade é responsável por analisar e avaliar cada processo de 
 
 \subsection{CMMI}
 
-“O CMMI é uma metodologia criada pela \textit{Software Engineering Institute} (SEI) para ser um guia destinado a melhorar os processos organizacionais e habilidade desses em gerenciar o desenvolvimento, a aquisição e a manutenção de produtos e serviços. O CMMI organiza as práticas, que já são consideradas efetivas, em uma estrutura que visa auxiliar a organização a estabelecer prioridades para melhoria e também fornece um guia para a implementação dessas melhorias.”[1]
+“O CMMI é uma metodologia criada pela \textit{Software Engineering Institute} (SEI) para ser um guia destinado a melhorar os processos organizacionais e habilidade desses em gerenciar o desenvolvimento, a aquisição e a manutenção de produtos e serviços. O CMMI organiza as práticas, que já são consideradas efetivas, em uma estrutura que visa auxiliar a organização a estabelecer prioridades para melhoria e também fornece um guia para a implementação dessas melhorias".~\cite{dev3}
 O CMMI traz consigo grandes possibilidades para melhoria em projetos, elevando o nível da qualidade e cumprindo melhor os prazos estipulados.
 O CMMI se divide em 5 estágios:
 
@@ -263,7 +263,7 @@ Os níveis em que a engenharia de requisitos está presente são Gerenciado e De
 			\item Eliminação de inconsistências
 			\item Utilização de terminologia comum
 			\item Desenvolvimento de \textit{software} com qualidade, garantindo cumprimento de prazos e atendendo às necessidades dos clientes 
-			\item Consistência com a norma ISO-15504 (norma que define o processo de desenvolvimento de \textit{software} de acordo com os níveis de capacidade para cada processo de acordo com o CMMI (CORTES, 2004)
+			\item Consistência com a norma ISO-15504 (norma que define o processo de desenvolvimento de \textit{software} de acordo com os níveis de capacidade para cada processo de acordo com o CMMI~\cite{cortes}
 			\item Integração de sistemas
 			\item Métricas e análises
 			\item Identificação de riscos
@@ -271,15 +271,15 @@ Os níveis em que a engenharia de requisitos está presente são Gerenciado e De
 	\item Desvantagens
 		\begin{itemize}
 			\item Não há nenhuma empresa brasileira certificada pelo SEI para auditoria, sendo necessário que a certificação seja criada nos Estados Unidos e trazida por um \textit{lead assessor}
-			\item Os preços de avaliação do CMMI podem variar de 36 a 60 mil dólares. Se a empresa necessitar de assessoria, o preço pode chegar à cerca de 125 mil dólares por ano (CMMI, 2015). Por esse motivo, pequenas e médias empresas tem problema em adotar esse modelo.
+			\item Os preços cobrados pela avaliação do CMMI não são acessíveis. Por esse motivo, pequenas e médias empresas tem problema em adotar esse modelo.
 		\end{itemize}
 \end{itemize}
 
 \subsection{MPS-BR}
 
-“É um movimento de melhoria de software voltado para a realidade brasileira. O programa é coordenado pela Associação para promoção de Software brasileiro (SOFTEX) com início de desenvolvimento em 2003.”~\cite{softex}
+“É um movimento de melhoria de software voltado para a realidade brasileira. O programa é coordenado pela Associação para promoção de \textit{Software} brasileiro (SOFTEX) com início de desenvolvimento em 2003.”~\cite{softex}
 
-É voltado para a realidade brasileira, 	além disso, é adequado para micro, pequenas e medias empresas alcançarem melhorias no processo de construção de um software.
+É voltado para a realidade brasileira, além disso, é adequado para micro, pequenas e médias empresas alcançarem melhorias no processo de construção de um \textit{software}.
 
 Os níveis definidos no MPS-BR são:
 
