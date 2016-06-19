@@ -1083,24 +1083,86 @@ Fluxo Principal
 
 
 
+[FA03] - Mostrar membros
+\begin{enumerate}
+  \item{O Usuário solicita vi visualização de membros do sistema}
+  \item{O sistema lista os membros}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
 
 
+\subsection{Condições Posteriores}
+
+Redirecionamento para o perfil da área. Ao final do caso de uso, o usuário deve ser redirecionado para a página da área.
 
 
+\section{UC02 - Manter Área}
+
+\subsection{Descrição}
+
+Esse caso de uso é destinado aos administradores do sistema, que poderão criar áreas dentro da aplicação que representam as mesmas na empresa.
+
+\subsection{Atores}
+
+\begin{itemize}
+  \item{Gestores da Engrena}
+\end{itemize}
 
 
+\subsection{Condições Prévias}
+
+\begin{itemize}
+  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar no sistema como administrador, tendo total acesso à todas as partes da aplicação}
+\end{itemize}
 
 
+\subsection{Fluxo de eventos}
+
+Fluxo Principal
+
+Esse caso de uso é iniciado quando o usuário está no sistema como administrador e deseja cadastrar ou remover uma área que representa uma direção, bem como atualizá-la ou apenas ler sobre a mesma
+
+\begin{enumerate}
+  \item{O usuário segue para a página de áreas, onde estarão listadas as que já existem com as opções de excluir [FA01], editar [FA02] e mostrar [FA03] a área. O usuário decide cadastrar uma nova área.}
+  \item{O usuário preenche os campos do formulário}
+  \item{O sistema valida as informações [RN02]}
+  \item{O sistema redireciona o usuário para o perfil da área, onde estão presentes as opções}
+\end{enumerate}
 
 
+Fluxo Alternativos
+
+[FA01] - Excluir uma área
+\begin{enumerate}
+  \item{O usuário solicita a exclusão de uma área}
+  \item{Uma mensagem de confirmação aparecerá}
+  \item{O usuário confirma a ação}
+  \item{O sistema então, desabilita a área, realizando a exclusão lógica}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
 
 
+[FA02] - Editar uma área
+\begin{enumerate}
+  \item{O usuário decide editar uma área}
+  \item{O sistema carrega o formulário de dados}
+  \item{O usuário altera as informações nos campos que desejar}
+  \item{O usuário salva as mudanças por meio de um botão}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
 
 
+[FA03] - Mostrar uma área
+\begin{enumerate}
+  \item{O Usuário solicita a visualização de áreas ao sistema}
+  \item{O Usuário seleciona uma área}
+  \item{O sistema redireciona para a página da área, que conterá informações gerais sobre a mesma}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
 
 
+\subsection{Condições Posteriores}
 
-
-
+Redirecionamento para o perfil da área. Ao final do caso de uso, o usuário deve ser redirecionado para a página da área
 
 
