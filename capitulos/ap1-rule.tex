@@ -968,3 +968,139 @@ A licença, portanto, será a General Public License V3 (GPL), amplamente utiliz
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Especificação de Caso de Uso}
+\label{especificação_de_caso_de_uso}
+
+\section{Diagrama de casos de uso}
+
+
+\begin{figure}[htb]
+	\centering
+	\label{figura_Diagrama-de-Caso-de-Uso}
+		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/Diagrama-de-Caso-de-Uso.eps}
+	\caption{Diagrama de Caso de Uso}
+\end{figure}
+
+\clearpage{}
+
+
+\section{UC01 - Manter Membro}
+
+\subsection{Descrição}
+
+Esse caso de uso é destinado aos futuros funcionários da Engrena, que desejam obter um cadastro na aplicação. Também é utilizado pelos gestores da empresa, pois podem remover membros inativos e/ou expulsos.
+
+\subsection{Atores}
+
+\begin{itemize}
+  \item{Gestores da Engrena}
+  \item{Funcionário da Engrena}
+\end{itemize}
+
+\subsection{Fluxo de Eventos}
+
+Condições Prévias
+\begin{itemize}
+  \item{Esse caso de uso é iniciado quando o usuário está no sistema como administrador e deseja cadastrar ou remover uma área que representa uma direção, bem como atualizá-la ou apenas ler sobre a mesma.}
+\end{itemize}
+
+Fluxo Principal
+\begin{enumerate}
+  \item{O Usuário preenche o formulário de cadastro} %1
+  \item{O Usuário envia o formulário para o sistema} %2
+  \item{O sistema valida os dados do usuário [RN01]} %3
+  \item{O sistema realiza o cadasto do usuário} %4
+\end{enumerate}
+
+
+[FE01] - Cadastro inválido
+\begin{enumerate}
+  \item{Sistema informa ao Usuário os campos inválidos.}
+  \item{O Usuário preenche os campos inválidos.}
+  \item{O Usuário envia o formulário para o sistema.}
+  \item{Retorna para o passo 4 do fluxo principal.}
+\end{enumerate}
+
+
+[FA01] - Excluir um membro
+\begin{enumerate}
+  \item{O usuário solicita ao sistema a exclusão de um membro}
+  \item{O sistema solicita confirmação}
+  \item{O usuário confirma a ação}
+  \item{O sistema então, desabilita o membro, realizando a exclusão lógica}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
+
+
+[FA02] - Editar um membro
+\begin{enumerate}
+  \item{O usuário decide editar um membro}
+  \item{O sistema carregará o formulário de dados}
+  \item{O usuário altera as informações nos campos que desejar}
+  \item{O usuário solicita ao sistema a alteração dos dados}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
