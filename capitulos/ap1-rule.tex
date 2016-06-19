@@ -264,3 +264,176 @@ Por fim, os diretores receberão uma notificação quando os membros marcarem um
 
 
 \end{apendicesenv}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Plano de Gerenciamento de Requisitos
+\chapter{Plano de Gerenciamento de Requisitos}
+\label{plano_de_gerenciamento_de_requisitos}
+
+\section{Introdução}
+
+A finalidade deste documento é documentar como será a rastreabilidade dos requisitos, bem como quais atributos serão utilizados para classificar os mesmos. Desta forma os requisitos estarão sendo analisados, documentados e gerenciados durante todo o ciclo de vida do projeto.
+
+\section{Gerenciamento de Requisitos}
+
+\subsection{Organização, Responsabilidades e Interfaces}
+
+De forma geral, não há uma distribuição de responsabilidade dentre os integrantes do time para ser o responsável pelo projeto EnGerir, no âmbito de que restringir a execução e documentação das atividades deste projeto. Mas há membros responsáveis pela completude de determinadas tarefas.
+
+\subsection{Ferramentas, Ambiente e Infra-estrutura}
+
+Dentre as ferramentas utilizadas no desenvolvimento do projeto serão estas
+\begin{itemize}
+
+\item{Google docs: como um ambiente compartilhado para a documentação de boa parte dos artefatos gerados pelo processo escolhido;}
+
+\item{Innoslate: como ferramente escolhida para o gerenciamento dos requisitos do projeto;}
+
+\item{Bizagi: como ferramenta para modelar o processo.}
+
+\end{itemize}
+
+
+\section{O Programa de Gerenciamento de Requisitos}
+
+\subsection{Identificação dos Requisitos}
+
+\begin{table}[!h]
+  \centering
+  \caption{Identificação dos Requisitos}
+  \label{identificação_dos_requisitos}
+  \begin{tabular}{|p{4cm}|p{5cm}|p{6cm}|}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Artefato(Tipo de Documento)}} & \multicolumn{1}{c|}{\textbf{Item de Rastreabilidade}} & \multicolumn{1}{c|}{\textbf{Descrição}} \\ \hline
+    Documento de Visão                      & Necessidade dos Envolvidos(NE)   & Descrição das principais necessidades dos stakeholders, bem como seus devidos atributos. \\ \hline
+    Documento de Visão                      & Características(CA)              & Descrição das características                                                            \\ \hline
+    Especificação de Caso de Uso            & Regras de negócio(RN)            & Descrição das regras de negocio a serem atendidas nos casos de uso.                      \\ \hline
+    Especificação de Requisitos de Software & Requisitos funcionais(RF)        & Descrição dos requisitos elicitados, bem como os seus devidos atributos.                 \\ \hline
+    Especificação Suplementar               & Requisitos não funcionais(RNF)   & Descrição dos requisitos não funcionais elicitados, bem como os seus devidos atributos.  \\ \hline
+    Modelo de Casos de Uso                  & Casos de Uso(UC)                 & Descrição dos casos de uso e seus respectivos disgramas.                                 \\ \hline
+  \end{tabular}
+\end{table}
+
+\clearpage{}
+
+\subsection {Rastreabilidade}
+
+\begin{figure}[htb]
+	\centering
+	\label{rastreabilidade2}
+		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/rastreabilidade2.eps}
+	\caption{Rastreabilidade adotada}
+\end{figure}
+
+\clearpage{}
+
+\subsection {Atributos}
+
+De modo geral, todos os nossos itens de rastreabilidade seguem os mesmos atributos, sendo eles
+
+\begin{itemize}
+
+\item{Prioridade;}
+\item{Status;}
+\item{Dificuldade;}
+
+\end{itemize}
+
+\subsection{Prioridade}
+
+Define o quão importante é o requisito para o sistema em relação aos demais. Os de maior prioridade serão implementados o quanto antes.
+
+\begin{table}[!h]
+\centering
+\caption{Prioridade}
+\label{attr_prioridade}
+\begin{tabular}{|p{2cm}|p{8cm}|}
+\hline
+Alta  & Sinaliza que este requisito é de extrema importância para o sistema e deve ser implementado o quanto antes.                                                            \\ \hline
+Média & Sinaliza que este requisito embora importante ele pode ter a sua implementação postergada em favor de um requisito de alta prioridade                                  \\ \hline
+Baixa & Um requisito que com a mais baixa prioridade ficará mais para o final do desenvolvimento do sistema ou quando outros requisitos mais importantes já estivem completos. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Status}
+
+Define o andamento de um determinado requisito durante o desenvolvimento do sistema.
+
+\begin{table}[!h]
+\centering
+\caption{Status}
+\label{attr_Status}
+\begin{tabular}{|p{3cm}|p{8cm}|}
+\hline
+Não inicializado & Usado para sinalizar que o item em questão ainda não foi inicializado, no sentido de que por algum requerimento, como depender de outros itens já terem sido finalizados, este teve o seu desenvolvimento postergado. \\ \hline
+Em andamento     & Sinaliza que este item está sendo desenvolvido.                                                                                                                                                                       \\ \hline
+Completado       & Sinaliza que este item já foi concluído.                                                                                                                                                                              \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Dificuldade}
+
+Serve de indicativo para uma possível dificuldade na implementação dos requisitos. É um atributo fundamental para o planejamento das iterações.
+
+\begin{table}[!h]
+\centering
+\caption{Dificuldade}
+\label{attr_Dificuldade}
+\begin{tabular}{|p{2cm}|p{8cm}|}
+\hline
+Alta  & Um requisito com um alto este nível de dificuldade receberá uma maior atenção em relação aos demais, pois este pode influenciar fortemente no desenvolvimento do sistema. \\ \hline
+Média & Um requisito com este nível não representa um grande risco para a implementação dos sistema.                                                                              \\ \hline
+Baixa & Sinaliza que este requisito pode ser facilmente implementado sem maiores riscos ou agravantes.                                                                            \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Gerenciamento de Mudança de Requisitos}
+
+\subsection{Processamento e Aprovação de Solicitações de Mudança}
+
+De acordo com o nosso processo de software, as aprovações e mudanças serão sempre feitas em concordância com os stakeholders e em etapas bem definidas do processo.
+
+\subsection{Comitê de Controle de Mudança (CCB)}
+
+Havendo uma concordância entre um representante dos stakeholders e os membros do grupo de desenvolvimento, já é considerado como uma mudança válida
+
+\section{Fluxos de Trabalho e Atividades}
+
+Embora qualquer membro do grupo de desenvolvimento do projeto possa estar trabalhando em um determinado requisito, sempre haverá um membro responsável por este, para garantir a completude do mesmo
+
+\section{Treinamento e Recursos}
+
+O próprio grupo de desenvolvimento irá realizar workshops junto aos stakeholders para a realização dos treinamento sobre o uso do sistema.
+
+
