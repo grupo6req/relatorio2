@@ -581,3 +581,390 @@ Por se tratar de uma aplicação web com desenvolvimento em uma linguagem orient
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Especificação de Requisitos de Software}
+\label{especificação_de_requisitos_de_software}
+
+
+\section{Introdução}
+
+\subsection{Finalidade}
+
+  Este documento tem por objetivo definir formalmente os requisitos funcionais da aplicação EnGerir, atuando como um contrato com o cliente de que o sistema foi abstraído corretamente pela equipe de desenvolvimento.
+
+  É importante salientar que o comportamento inteiro da aplicação será descrito no documento através dos requisitos funcionais, já que não se trata do desenvolvimento de um subsistema que será acoplado em um sistema maior.
+
+  Os requisitos não funcionais, no entanto, não estarão presentes a seguir. Esses estão descritos na Especificação Suplementar, de forma que a divisão entre o que o sistema deve fazer e como ele deve fazer ficou bem definida.
+
+\subsection{Escopo}
+
+O escopo da aplicação é o de gerenciamento de pessoas de uma empresa júnior. As funcionalidades presentes no mesmo deverão atender às necessidades de tal contexto. É necessário, portanto, mecanismos de gerenciamento de atividades e produtividade.
+
+\subsection{Visão Geral}
+
+Essa Especificação de Requisitos de Software segue a seguinte estrutura de capítulos:
+
+\begin{itemize}
+\item{Introdução: tópico ao qual está inserido informações gerais acerca do documento.}
+\item{Descrição Geral: uma rápida reflexão acerca do sistema.}
+\item{Requisitos Específicos: parte principal do documento que tratará dos requisitos funcionais.}
+\item{Classificação dos Requisitos: definição dos atributos aos requisitos funcionais definidos anteriormente.}
+\item{Informações de suporte}
+\end{itemize}
+
+\section{Descrição Geral}
+
+  As empresas juniores tem o objetivo de preparar os alunos para o mercado de trabalho, prestando os serviços de seus respectivos cursos à um custo mais acessível que grandes corporações da área.
+
+  Por se tratar de um escopo menor, a atuação se dá com um orçamento limitado. Dentro dessa condição financeira, aspectos como produtividade e projetos corretamente elaborados recebem um enorme foco.
+
+  É nesse contexto que entra uma aplicação que permita aos diretores de uma empresa júnior aferir a produtividade de membros e de áreas dentro da empresa, evidenciando áreas que podem precisar de ajustes estruturais para produzirem melhor.
+
+  Indo mais além, o sistema permite aos funcionários terem uma visualização clara de suas atividades e datas de encerramentos, possibilitando um melhor planejamento por parte dos mesmos para o melhor cumprimento de prazos.
+
+\section{Requisitos Específicos}
+
+\subsection{Funcionalidade}
+
+  Nesta seção, serão descritos os requisitos funcionais obtidos através da utilização das técnicas de elicitação citadas no primeiro relatório da disciplina. Como descrito no mesmo, os requisitos serão avaliados com base em três atributos:
+
+\begin{itemize}
+\item{
+  Prioridade
+
+  \begin{itemize}
+    \item{Alta}
+    \item{Média}
+    \item{Baixa}
+  \end{itemize}
+}
+\item{
+  Status
+
+  \begin{itemize}
+    \item{Completado}
+    \item{Em andamento}
+    \item{Não inicializado}
+  \end{itemize}
+}
+\item{
+  Dificuldade
+
+  \begin{itemize}
+    \item{Alta}
+    \item{Média}
+    \item{Baixa}
+  \end{itemize}
+}
+\end{itemize}
+
+Desses atributos, apenas prioridade e dificuldade serão descritos nesse documento, enquanto que status será utilizado para rastreabilidade no desenvolvimento da aplicação.
+
+
+\subsection{RF 1.1.1.1  Anexar documento à tarefas}
+
+\begin{itemize}
+  \item{Prioridade: Média}
+  \item{Dificuldade: Alta}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+Deve ser possível anexar documentos à tarefas criadas com o objetivo de fornecer mais informações e detalhes para o funcionário designado sobre o que está sendo pedido dele. Essas informações podem vir na forma de templates, livros ou qualquer outro tipo de documento.
+
+
+\subsection{RF 1.1.1.2 Buscar por competência}
+
+\begin{itemize}
+  \item{Prioridade: Baixa}
+  \item{Dificuldade: Alta}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+O gestor, para alocação de pessoas à um projeto, deve poder buscar por pessoas na aplicação utilizando um filtro de competência, com o objetivo de atribuir o projeto às pessoas mais adequadas ao mesmo.
+
+
+\subsection{RF 1.1.1.3 Realizar backup}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Alta}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+O sistema deverá realizar backups de forma constante, para que não se percam todos os dados na ocorrência de alguma eventualidade, tanto a nível de software quanto hardware.
+
+
+\subsection{RF 1.1.1.4 Realizar login com Facebook e Google+}
+
+\begin{itemize}
+  \item{Prioridade: Baixa}
+  \item{Dificuldade: Média}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+O sistema deve permitir o login através de uma conta do Facebook ou do Google+ para facilitar o acesso a ferramenta.
+
+
+\subsection{RF 1.1.1.5 Cadastrar membros}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve ser capaz de cadastrar novos membros.
+
+
+\subsection{RF 1.1.1.6 Remover membros}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve ser capaz de remover logicamente os membros.
+
+
+\subsection{RF 1.1.1.7 Atualizar membros}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve ser capaz de atualizar os dados de seus membros.
+
+
+
+\subsection{RF 1.1.1.8 Visualizar membros}
+
+\begin{itemize}
+  \item{Prioridade: Baixa}
+  \item{Dificuldade: Baixa}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+O sistema deve ser capaz de disponibilizar a visualização dos dados de seus membros.
+
+
+\subsection{RF 1.1.2.1 Inserir competências e áreas}
+
+\begin{itemize}
+  \item{Prioridade: Baixa}
+  \item{Dificuldade: Baixa}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+Na criação do usuário e na edição do mesmo, o funcionário deve poder inserir suas competências técnicas em sua descrição e as áreas da empresa para qual o mesmo já trabalhou, de forma a manter os gestores cientes da rotatividade realizada pelo usuário
+
+
+\subsection{RF 1.1.2.2 Gerar desempenho por mês}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Média}
+  \item{Status: Em andamento}
+\end{itemize}
+
+Além de visualizar graficamente o desempenho de uma área ou de um membro, deve ser possível separar essa informação por meses. Isso é, o sistema deve permitir a visualização da produtividade de um funcionário ou de uma área em um determinado mês, para fins de comparação com outros períodos de tempo.
+
+
+\subsection{RF 1.2.1.1 Criar Tarefas}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve disponibilizar o cadastro de tarefas para os seus membros.
+
+
+\subsection{RF 1.2.1.2 Remover Tarefas}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve excluir logicamente as tarefas.
+
+
+\subsection{RF 1.2.1.3 Atualizar Tarefas}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve disponibilizar formas de manter as tarefas atualizadas.
+
+
+\subsection{RF 1.2.1.4 Visualizar Tarefas}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve disponibilizar formas dos membros poderem visualizar as suas tarefas.
+
+
+\subsection{RF 1.2.1.5 Gerar Notificação para Membros Quando uma Tarefa for Criada}
+
+\begin{itemize}
+  \item{Prioridade: Média}
+  \item{Dificuldade: Média}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+Ao atribuir uma tarefa para um funcionário, o mesmo deve receber uma notificação para ser informado da existência da tarefa.
+
+
+\subsection{RF 1.2.1.6 Atribuir Tarefa a Funcionários}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+Após a criação de uma tarefa, o gestor da empresa deve poder atribuí-la à um funcionário da mesma.
+
+
+\subsection{RF 1.2.2.1 Atribuir Notas às Tarefas}
+
+\begin{itemize}
+  \item{Prioridade: Baixa}
+  \item{Dificuldade: Baixa}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+O gestor de uma área pode atribuir uma nota a uma tarefa enviada por um funcionário, de forma a servir como parâmetro no futuro para decisões como promoção de um membro à um cargo de diretoria e outras decisões.
+
+
+\subsection{RF 1.2.2.2 Gerar Notificação para os Diretores Quando um Membro Finalizar}
+
+\begin{itemize}
+  \item{Prioridade: Média}
+  \item{Dificuldade: Média}
+  \item{Status: Não inicializado}
+\end{itemize}
+
+Após um funcionário assinalar uma tarefa como completa, uma notificação deve ser gerada para o gestor daquela área com o objetivo de conscientizar o mesmo desse fato, para que ele possa recolher pessoalmente a atividade com o membro.
+
+
+\subsection{RF 1.2.3.1 Cadastrar Área}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve disponibilizar o cadastro de áreas para os seus membros, cada membro pertence a uma área.
+
+
+\subsection{RF 1.2.3.2 Remover Área}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve disponibilizar a remoção lógica de suas áreas.
+
+
+\subsection{RF 1.2.3.3 Atualizar Área}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve possibilitar manter as áreas atualizadas.
+
+
+\subsection{RF 1.2.3.4 Visualizar Área}
+
+\begin{itemize}
+  \item{Prioridade: Alta}
+  \item{Dificuldade: Baixa}
+  \item{Status: Em andamento}
+\end{itemize}
+
+O sistema deve possibilitar a visualização de suas áreas.
+
+
+
+\section{Restrições de Design}
+
+Neste tópico, serão apresentados as restrições para o projeto da ferramente, que se concentram em uma restrição de linguagem e de framework, além das ferramentas que auxiliam o desenvolvimento.
+
+\subsection{Ruby on Rails}
+
+Por se tratar do desenvolvimento de uma ferramenta web, uma das melhores linguagens disponíveis para esse projeto é o Ruby, capaz de formar um código altamente legível e de fácil manutenção no futuro.
+
+Para complementar, será utilizado o framework Rails, que direciona a linguagem para o desenvolvimento web, com diversos recursos para facilitar a criação de objetos e entidades no projeto orientado à objeto.
+
+\subsection{Git}
+
+Ferramenta de versionamento que será utilizada no desenvolvimento do projeto, para manter controle dos arquivos e alterações da ferramenta.
+
+
+\subsection{Innoslate}
+
+Ferramenta de gerenciamento de requisitos que será utilizada para realizar a rastreabilidade vertical do projeto.
+
+Sobre a ferramenta, é importante ressaltar que é uma ferramenta paga que será utilizada no período trial.
+
+\section{Requisitos de Licenciamento}
+
+O software EnGerir tem o objetivo de ser gratuito e de livre distribuição para qualquer pessoa ou empresa que tenha o objetivo de utilizá-lo ou desenvolver outro software com base no código do mesmo.
+
+Isso significa que, à qualquer momento, o projeto pode ser utilizado para qualquer fim por terceiros. Qualquer empresa que tiver as dificuldades encontradas pela Engrena poderá utilizar a solução entregue à mesma.
+
+A licença, portanto, será a General Public License V3 (GPL), amplamente utilizada no contexto de software livre, que é precisamente onde o EnGerir se encaixa.
+
+
+
