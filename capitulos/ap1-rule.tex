@@ -437,3 +437,147 @@ Embora qualquer membro do grupo de desenvolvimento do projeto possa estar trabal
 O próprio grupo de desenvolvimento irá realizar workshops junto aos stakeholders para a realização dos treinamento sobre o uso do sistema.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Especificação Suplementar}
+\label{especificação_suplementar}
+
+\section{Introdução}
+
+Este documento tem por finalidade capturar os requisitos de sistema que não foram identificados imediatamente na documentação de requisitos de software do EnGerir. Entre os requisitos não funcionais estão inclusos os atributos de qualidade a serem desenvolvidos, englobando Disponibilidade, Integridade e Segurança e Usabilidade.
+
+\subsection{Finalidade}
+
+Definir os requisitos não funcionais do sistema, sendo estes os que não foram identificados no modelo de casos de uso. Com base na especificação suplementar e no modelo de casos de uso, obtemos todo o conjunto de requisitos do sistema.
+
+\subsection{Escopo}
+
+Prover a gestão dos funcionários da empresa júnior Engrena.
+
+\subsection{Referências}
+
+\begin{itemize}
+\item{Artefato - Especificação de Requisitos de Software - Engrena}
+\item{Artefato - Especificação de Caso de Uso - Engrena}
+\end{itemize}
+
+\section{Funcionalidade}
+
+Os requisitos funcionais estão descritos na especificação de requisitos de software
+
+\section{Usabilidade}
+
+O sistema deverá dispor de uma facilidade em sua utilização, para não ocorrer perca de produtividade para compreender o funcionamento do sistema
+
+\section{Confiabilidade}
+
+O sistema deverá estar disponível 24 horas por dia, 7 dias por semana
+
+\section{Integridade e Segurança}
+
+\begin{itemize}
+\item{As informações apresentadas pelo EnGerir deverão estar condizentes impecavelmente baseados na realidade, por demonstrar resultados referentes a funcionários.}
+\item{O EnGir deverá ser seguro contra eventualidades, por tratar da produtividade de uma empresa.}
+\end{itemize}
+
+\section{Restrição Tecnológica}
+
+\begin{itemize}
+\item{A solução web foi proposta para não ocorrer incompatibilidade do sistema, além do fato de que o desempenho de sistemas web é maior.}
+\item{A escolha da linguagem de programação, foi a Ruby on Rails, pois ela é a mais eminente dentre a comunidade da FGA, além de ser voltada para o desenvolvimento web.}
+\end{itemize}
+
+\section{Restrições de Design}
+
+Por se tratar de uma aplicação web com desenvolvimento em uma linguagem orientada à objetos, o padrão Model-View-Controller (MVC) será utilizado. Esse padrão arquitetural consiste em dividir o sistema em três camadas, consistindo de:
+
+\begin{itemize}
+\item{Model: Abstrações das entidades do mundo real no contexto de desenvolvimento. Basicamente, é um modelo lógico do tipo de dado que será armazenado no banco de dados da aplicação}
+\item{View: Camada visual do sistema, apresentando as telas para o usuário final para permitir uma interação mais simplificada}
+\item{Controller: É a camada que contém a lógica de negócio, com métodos destinados a realizar as funcionalidades prometidas por um determinado software}
+\end{itemize}
+
+\begin{figure}[htb]
+	\centering
+	\label{figura_mvc}
+		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/MVC.eps}
+	\caption{Padrão MVC. Fonte: http://i.stack.imgur.com/Beh3a.png}
+\end{figure}
+
+\clearpage{}
+
+\section{Interfaces}
+
+\subsection{Interfaces de Usuário}
+
+\begin{itemize}
+  \item{Tela inicial;}
+  \item{Tela de administradores;}
+  \item{Tela de desempenho;}
+  \item{Tela da área da empresa;}
+  \item{Tela das tarefas;}
+  \item{Tela do diretor;}
+  \item{Tela do funcionários.}
+\end{itemize}
+
+
+\subsection{Interfaces de Hardware}
+
+\begin{itemize}
+  \item{Servidor para aplicação web;}
+  \item{Smartphone;}
+  \item{Tablet;}
+  \item{Monitor de vídeo;}
+  \item{Teclado;}
+  \item{Mouse ou touchpad/trackpad.}
+\end{itemize}
+
+
+\subsection{Interfaces de Software}
+
+\begin{itemize}
+  \item{Rational Unified Process;}
+  \item{Ruby on Rails.}
+\end{itemize}
+
+\subsection{Requisitos de Licenciamento}
+
+\begin{itemize}
+  \item{A licença atribuída ao sistema será a GPL versão 3}
+\end{itemize}
+
+
+
