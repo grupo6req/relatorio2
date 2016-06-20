@@ -1447,6 +1447,162 @@ Status da tarefa       & Dropdown com as seguintes porcentagens: 0, 25, 50, 75, 
 
 
 
+\chapter{Casos de teste}
+
+\section{UC01 - Manter usuário}
+
+\subsection{TC01 - Cadastro com campos preenchidos corretamente}
+
+
+Descrição:
+\begin{itemize}
+  \item{Este teste verifica o correto cadastro de um novo usuário}
+\end{itemize}
+
+
+Pré condições:
+\begin{itemize}
+  \item{Usuário não estar cadastrado no sistema}
+\end{itemize}
+
+
+Pós condições:
+\begin{itemize}
+  \item{Novo usuário cadastrado no sistema}
+\end{itemize}
+
+Procedimentos(entradas e saídas):
+\begin{enumerate}
+  \item{Acesse a pagina de cadastro}
+  \item{Preencha todos os campos obrigatórios [RN01]}
+  \item{Solicite o cadastro}
+  \item{O sistema informa que o cadastro foi bem sucedido}
+\end{enumerate}
+
+
+
+\subsection{TC02 - Cadastro com campos em branco}
+
+
+Descrição:
+\begin{itemize}
+  \item{Este teste visa garantir que o sistema não cadastre um usuário na ausência de campos obrigatórios}
+\end{itemize}
+
+
+Pré condições:
+\begin{itemize}
+  \item{Usuário não estar cadastrado no sistema}
+\end{itemize}
+
+
+Pós condições:
+\begin{itemize}
+  \item{Usuário não cadastrado no sistema}
+\end{itemize}
+
+Procedimentos(entradas e saídas):
+\begin{enumerate}
+  \item{Acesse a pagina de cadastro}
+  \item{Não preencha os campos obrigatórios [RN01]}
+  \item{Solicite o cadastro}
+  \item{O sistema não realiza o cadastro}
+  \item{O sistema informa os campos a serem preenchidos}
+\end{enumerate}
+
+
+
+
+\subsection{TC03 - Cadastro com campo e-mail incorreto}
+
+
+Descrição:
+\begin{itemize}
+  \item{Este teste visa garantir que o sistema não cadastre um usuário com um e-mail inválido}
+\end{itemize}
+
+
+Pré condições:
+\begin{itemize}
+  \item{Usuário não estar cadastrado no sistema}
+\end{itemize}
+
+
+Pós condições:
+\begin{itemize}
+  \item{Usuário não cadastrado no sistema}
+\end{itemize}
+
+Procedimentos(entradas e saídas):
+\begin{enumerate}
+  \item{Acesse a pagina de cadastro}
+  \item{Preencha os campos corretamente [RN01], menos o campo de e-mail}
+  \item{Preencha o campo de e-mail erroneamente}
+  \item{Solicite o cadastro}
+  \item{O sistema não realiza o cadastro}
+\end{enumerate}
+
+
+
+
+\section{UC02 - Manter Área}
+
+
+\subsection{TC04 - Criação de uma nova área}
+
+
+Descrição:
+\begin{itemize}
+  \item{Este teste verifica a correta criação de uma área}
+\end{itemize}
+
+
+Pré condições:
+\begin{itemize}
+  \item{Usuário ser administrador do sistema}
+\end{itemize}
+
+
+Pós condições:
+\begin{itemize}
+  \item{Nova área cadastrada no sistema}
+\end{itemize}
+
+Procedimentos(entradas e saídas):
+\begin{enumerate}
+  \item{Acesse a pagina de áreas}
+  \item{Solicite o cadastro de uma nova área}
+  \item{Preencha todos os campos obrigatórios [RN02]}
+  \item{Solicite o cadastro}
+  \item{Solicite o cadastro}
+  \item{O sistema informa que o cadastro foi bem sucedido}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \chapter{Plano de Iteração}
 \label{iteration}
 
