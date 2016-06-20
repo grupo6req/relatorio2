@@ -263,13 +263,6 @@ Por fim, os diretores receberão uma notificação quando os membros marcarem um
 
 
 
-\end{apendicesenv}
-
-
-
-
-
-
 
 
 
@@ -995,23 +988,8 @@ A licença, portanto, será a General Public License V3 (GPL), amplamente utiliz
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-\chapter{Especificação de Caso de Uso}
-\label{especificação_de_caso_de_uso}
-
-\section{Diagrama de casos de uso}
+\chapter{Diagrama de Casos de Uso}
+\label{use-diagram}
 
 
 \begin{figure}[htb]
@@ -1022,6 +1000,11 @@ A licença, portanto, será a General Public License V3 (GPL), amplamente utiliz
 \end{figure}
 
 \clearpage{}
+
+
+
+\chapter{Especificação de Caso de Uso}
+\label{especificação_de_caso_de_uso}
 
 
 \section{UC01 - Manter Membro}
@@ -1039,12 +1022,7 @@ Esse caso de uso é destinado aos futuros funcionários da Engrena, que desejam 
 
 \subsection{Fluxo de Eventos}
 
-Condições Prévias
-\begin{itemize}
-  \item{Esse caso de uso é iniciado quando o usuário está no sistema como administrador e deseja cadastrar ou remover uma área que representa uma direção, bem como atualizá-la ou apenas ler sobre a mesma.}
-\end{itemize}
-
-Fluxo Principal
+\textbf{Fluxo Principal}
 \begin{enumerate}
   \item{O Usuário preenche o formulário de cadastro} %1
   \item{O Usuário envia o formulário para o sistema} %2
@@ -1052,15 +1030,7 @@ Fluxo Principal
   \item{O sistema realiza o cadasto do usuário} %4
 \end{enumerate}
 
-
-[FE01] - Cadastro inválido
-\begin{enumerate}
-  \item{Sistema informa ao Usuário os campos inválidos.}
-  \item{O Usuário preenche os campos inválidos.}
-  \item{O Usuário envia o formulário para o sistema.}
-  \item{Retorna para o passo 4 do fluxo principal.}
-\end{enumerate}
-
+\textbf{Fluxo Alternativo}
 
 [FA01] - Excluir um membro
 \begin{enumerate}
@@ -1071,7 +1041,6 @@ Fluxo Principal
   \item{O caso de uso é encerrado}
 \end{enumerate}
 
-
 [FA02] - Editar um membro
 \begin{enumerate}
   \item{O usuário decide editar um membro}
@@ -1081,8 +1050,6 @@ Fluxo Principal
   \item{O caso de uso é encerrado}
 \end{enumerate}
 
-
-
 [FA03] - Mostrar membros
 \begin{enumerate}
   \item{O Usuário solicita vi visualização de membros do sistema}
@@ -1090,6 +1057,20 @@ Fluxo Principal
   \item{O caso de uso é encerrado}
 \end{enumerate}
 
+\textbf{Fluxo de Exceção}
+[FE01] - Cadastro inválido
+\begin{enumerate}
+\item{Sistema informa ao Usuário os campos inválidos.}
+\item{O Usuário preenche os campos inválidos.}
+\item{O Usuário envia o formulário para o sistema.}
+\item{Retorna para o passo 4 do fluxo principal.}
+\end{enumerate}
+
+
+\subsection{Condições Prévias}
+\begin{itemize}
+\item{Esse caso de uso é iniciado quando o usuário está no sistema como administrador e deseja cadastrar ou remover uma área que representa uma direção, bem como atualizá-la ou apenas ler sobre a mesma.}
+\end{itemize}
 
 \subsection{Condições Posteriores}
 
@@ -1108,17 +1089,9 @@ Esse caso de uso é destinado aos administradores do sistema, que poderão criar
   \item{Gestores da Engrena}
 \end{itemize}
 
-
-\subsection{Condições Prévias}
-
-\begin{itemize}
-  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar no sistema como administrador, tendo total acesso à todas as partes da aplicação}
-\end{itemize}
-
-
 \subsection{Fluxo de eventos}
 
-Fluxo Principal
+\textbf{Fluxo Principal}
 
 Esse caso de uso é iniciado quando o usuário está no sistema como administrador e deseja cadastrar ou remover uma área que representa uma direção, bem como atualizá-la ou apenas ler sobre a mesma
 
@@ -1130,7 +1103,7 @@ Esse caso de uso é iniciado quando o usuário está no sistema como administrad
 \end{enumerate}
 
 
-Fluxo Alternativos
+\textbf{Fluxo Alternativo}
 
 [FA01] - Excluir uma área
 \begin{enumerate}
@@ -1160,6 +1133,11 @@ Fluxo Alternativos
   \item{O caso de uso é encerrado}
 \end{enumerate}
 
+\subsection{Condições Prévias}
+
+\begin{itemize}
+\item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar no sistema como administrador, tendo total acesso à todas as partes da aplicação}
+\end{itemize}
 
 \subsection{Condições Posteriores}
 
@@ -1182,14 +1160,7 @@ Este caso de uso é predominantemente destinado aos administradores que poderão
 
 \subsection{Fluxo de eventos}
 
-Condições Prévias
-\begin{itemize}
-  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar no sistema como administrador, tendo total acesso à todas as partes da aplicação. Ou deve estar no sistema como usuário, tendo acesso apenas a visualização das suas tarefas}
-\end{itemize}
-
-
-
-Fluxo principal
+\textbf{Fluxo principal}
 
 \begin{enumerate}
   \item{O usuário segue para a página de tarefas, onde estarão listadas as que já existem com as opções de excluir [FA01], editar [FA02] e mostrar [FA03] a tarefa. O usuário deseja cadastrar uma nova área}
@@ -1199,7 +1170,7 @@ Fluxo principal
 \end{enumerate}
 
 
-Fluxos Alternativos
+\textbf{Fluxo Alternativo}
 
 [FA01] - Excluir uma tarefa
 \begin{enumerate}
@@ -1229,6 +1200,10 @@ Fluxos Alternativos
   \item{O caso de uso é encerrado}
 \end{enumerate}
 
+\subsection{Condições Prévias}
+\begin{itemize}
+\item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar no sistema como administrador, tendo total acesso à todas as partes da aplicação. Ou deve estar no sistema como usuário, tendo acesso apenas a visualização das suas tarefas}
+\end{itemize}
 
 \subsection{Condições Posteriores}
 
@@ -1250,12 +1225,8 @@ Esse caso de uso é destinado gestores da Engrena, que poderão assinalar respon
 
 \subsection{Fluxo de Eventos}
 
-Condições Prévias
-\begin{itemize}
-  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema como administrador}
-\end{itemize}
+\textbf{Fluxo Principal}
 
-Fluxo Principal
 \begin{enumerate}
   \item{O Usuário segue para a parte de tarefas do sistema}
   \item{O Usuário clica no nome de uma tarefa}
@@ -1268,6 +1239,10 @@ Fluxo Principal
   \item{O caso de uso é encerrado}
 \end{enumerate}
 
+\subsection{Condições Prévias}
+\begin{itemize}
+\item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema como administrador}
+\end{itemize}
 
 \subsection{Condições Posteriores}
 
@@ -1289,12 +1264,8 @@ Esse caso de uso é destinado ao gestor da Engrena que deseja visualizar o desem
 
 \subsection{Fluxo de Eventos}
 
-Condições Prévias
-\begin{itemize}
-  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema com sua conta de usuário comum.}
-\end{itemize}
 
-Fluxo Principal
+\textbf{Fluxo Principal}
 
 \begin{enumerate}
   \item{O usuário entra na página de um membro ou área}
@@ -1302,6 +1273,10 @@ Fluxo Principal
   \item{O caso de uso encerrado}
 \end{enumerate}
 
+\subsection{Condições Prévias}
+\begin{itemize}
+\item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema com sua conta de usuário comum.}
+\end{itemize}
 
 
 
@@ -1317,16 +1292,9 @@ Esse caso de uso é destinado aos funcionários da Engrena, que poderão assinal
   \item{Funcionários da Engrena}
 \end{itemize}
 
-
 \subsection{Fluxo de Eventos}
 
-Condições Prévias
-\begin{itemize}
-  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema com sua conta de usuário comum}
-\end{itemize}
-
-
-Fluxo Principal
+\textbf{Fluxo Principal}
 
 \begin{enumerate}
   \item{O usuário segue para a sua área de tarefas, onde estarão todas que foram atribuídas ao mesmo}
@@ -1339,6 +1307,10 @@ Fluxo Principal
   \item{O caso de uso é encerrado}
 \end{enumerate}
 
+\subsection{Condições Prévias}
+\begin{itemize}
+\item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema com sua conta de usuário comum}
+\end{itemize}
 
 \subsection{Condições Posteriores}
 
@@ -1432,3 +1404,96 @@ Status da tarefa       & Dropdown com as seguintes porcentagens: 0, 25, 50, 75, 
 
 
 
+
+
+
+
+
+\chapter{Plano de Iteração}
+\label{iteration}
+
+
+\section{Introdução}
+Este plano de iteração irá detalhar em ordem cronológica as iterações e suas respectivas atividades executadas ao longo de todo o projeto.
+
+\subsection{Finalidade}
+Tem como finalidade explicar e detalhar como será realizada a implementação do EnGerir, esclarecendo tudo que será executado e quando será executado, para todas as partes envolvidas.
+
+\subsection{Escopo}
+O plano de iteração do projeto EnGerir foca no detalhamento das atividades executadas durante a etapa de construção do \textit{software}.
+
+\subsection{Definições, Acrônimos e Abreviações}
+\begin{itemize}
+\item \textit{Template}: modelo estabelecido a fim de criar conteúdos de forma otimizada.
+\end{itemize}
+
+\subsection{Visão Geral}
+\begin{itemize}
+\item As principais atividades de cada iteração;
+\item Os recursos humanos necessários;
+\item Os casos de uso priorizados para cada iteração;
+\item Os critérios de avaliação de cada iteração.
+\end{itemize}
+
+\subsection{Referências}
+Este plano de iteração foi escrito seguindo o \textit{template} disponibilizado no seguinte endereço eletrônico: www.funpar.ufpr.br
+
+\section{Plano}
+
+\begin{table}[!h]
+\centering
+\caption{Plano de iteração}
+\label{iteration-plan}
+\begin{tabular}{|l|l|l|}
+\hline
+Atividade                                  & Início   & Termínio \\ \hline
+Atualização do cronograma                  & 04/06/16 & 20/06/16 \\ \hline
+Priorizar casos de uso                     & 14/06/16 & 14/06/16 \\ \hline
+Definir casos de uso atacados por iteração & 10/06/16 & 14/06/16 \\ \hline
+Primeira Iteração                          & 12/06/16 & 20/06/16 \\ \hline
+\end{tabular}
+\end{table}
+
+\clearpage{}
+
+\section{Recursos}
+A equipe de trabalho consiste de quatro integrantes:
+\begin{itemize}
+\item Fábio Teixeira
+\item Gustavo Araujo
+\item Marcelo Martins
+\item Victor Navarro
+\end{itemize}
+
+\section{Casos de Uso}
+Para a 1ª iteração, serão implementados os seguintes casos de uso:
+\begin{itemize}
+\item UC01- Manter membros;
+\item UC02- Manter área;
+\item UC03- Manter tarefas;
+\item UC04- Atribuir tarefas à funcionário;
+\item UC05- Gerar gráficos de produtividade de membros e área;
+\item UC06- Assinalar \textit{status} das tarefas.
+\end{itemize}
+
+\section{Critérios de Avaliação}
+\begin{itemize}
+\item Cumprimento dos prazos;
+\item Implementação dos casos de uso.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{apendicesenv}

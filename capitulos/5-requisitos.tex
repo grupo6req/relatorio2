@@ -1,0 +1,73 @@
+\chapter{Requisitos Coletados}
+\label{collection}
+
+\section{Problemas}
+\begin{itemize}
+\item PB1: Gerenciar os membros e as atividades dos mesmos.
+\end{itemize}
+
+\section{Necessidades}
+\begin{itemize}
+\item NE1.1: Verificar desempenho de áreas e usuários individuais dentro da empresa. Também consultar tal informação relativo ao tempo.
+\item NE1.2: Criar tarefas em um ambiente virtual compartilhado e assinalar funcionários para sua execução, com atributos.
+\end{itemize}
+
+\section{Características}
+\begin{itemize}
+\item CA 1.1.1: Agregar informações.
+\item CA 1.1.2: Mostrar desempenho de membros graficamente.
+\item CA 1.2.1: Criar tarefas em um ambiente virtual.
+\item CA 1.2.2: Verificar tarefas completadas.
+\item CA 1.2.3: Criar áreas para alocação de membros.
+\end{itemize}
+
+\section{Requisitos Funcionais}
+\begin{itemize}
+\item RF 1.1.1.1- Deve ser possível anexar documentos à tarefas criadas com o objetivo de fornecer mais informações e detalhes para o funcionário designado para a execução da mesma.
+\item RF 1.1.1.2- O gestor, para alocação de pessoas à um projeto, deve poder buscar por pessoas na aplicação utilizando um filtro de competência.
+\item RF 1.1.1.3- O sistema deverá realizar \textit{backups} de forma constante, para que não se percam todos os dados na ocorrência de alguma eventualidade.
+\item RF 1.1.1.4- O sistema deve permitir o \textit{login} através de uma conta do Facebook ou do Google+.
+\item RF 1.1.1.5- O sistema deve ser capaz de cadastrar novos membros.
+\item RF 1.1.1.6- O sistema deve ser capaz de remover logicamente os membros.
+\item RF 1.1.1.7- O sistema deve ser capaz de atualizar os dados de seus membros.
+\item RF 1.1.1.8- O sistema deve ser capaz de disponibilizar a visualização de dados de seus membros.
+\item RF 1.1.2.1- Na criação do usuário e edição do mesmo, o funcionário deve poder inserir suas competências técnicas em sua descrição e as áreas da empresa para qual o mesmo já trabalhou.
+\item RF 1.1.2.2- Além de visualizar graficamente o desempenho de uma área ou membro, deve ser possível separar essa informação por meses.
+\item RF 1.2.1.1- O sistema deve disponibilizar o cadastro de tarefas para os seus membros.
+\item RF 1.2.1.2- O sistema deve excluir logicamente as tarefas.
+\item RF 1.2.1.3- O sistema deve disponibilizar formas de manter as tarefas atualizadas.
+\item RF 1.2.1.4- O sistema deve disponibilizar formas dos membros poderem visualizar as suas tarefas.
+\item RF 1.2.1.5- Ao atribuir uma tarefa para um funcionário, o mesmo deve receber uma notificação para ser informado da existência da tarefa.
+\item RF 1.2.1.6- Após a criação de uma tarefa, o gestor da empresa deve poder atribuí-la à um funcionário da mesma.
+\item RF 1.2.2.1- O gestor de uma área deve poder atribuir nota a uma tarefa enviada por um funcionário.
+\item RF 1.2.2.2- Após um funcionário assinalar uma tarefa como completa, uma notificação deve ser gerada para o gestor daquela área.
+\item RF 1.2.3.1- O sistema deve disponibilizar o cadastro de áreas para os seus membros.
+\item RF 1.2.3.2- O sistema deve disponibilizar a remoção lógica de suas áreas.
+\item RF 1.2.3.3- O sistema deve possibilitar manter as áreas atualizadas.
+\item RF 1.2.3.4- O sistema deve possibilitar a visualização de suas áreas.
+\end{itemize}
+
+\section{Requisitos Não Funcionais}
+\begin{itemize}
+\item RNF1- O sistema deverá dispor de facilidade na sua utilização, para não ocorrer perda de produtividade.
+\item RNF2- O sistema deverá estar disponível 24 horas por dia, 7 dias por semana.
+\item RNF3- As informações apresentadas pelo EnGerir deverão estar condizentes impecavelmente baseados na realidade.
+\item RNF4- O EnGerir deverá ser seguro contra eventualidades, por tratar da produtividade de uma empresa. Assim, medidas tecnológicas como \textit{backups} serão utilizadas para evitar tais cenários.
+\end{itemize}
+
+\section{Casos de Uso}
+\begin{itemize}
+\item UC01- Manter Membro \\
+  Esse caso de uso é destinado aos futuros funcionários da Engrena, que desejam obter um cadastro na aplicação. Adicionalmente, um gestor pode remover um membro, enquanto todos podem visualizar e alterar os dados.
+\item UC02- Manter Área \\
+  Esse caso de uso é destinado aos gestores do sistema, que poderão criar, atualizar e remover áreas dentro do sistema. Todos os usuários poderão visualizar os dados das áreas.
+\item UC03- Manter Tarefas \\
+  Esse caso de uso é predominantemente destinado aos gestores que poderão criar, atualizar e remover tarefas. Todos os usuários poderão visualizar os dados das tarefas.
+
+\item UC04- Atribuir tarefas à funcionário \\
+  Esse caso de uso é destinado aos gestores da Engrena, que após criarem tarefas atribuirão as mesmas aos funcionários da empresa.
+\item UC05- Gerar gráficos de produtividade de membros e área \\
+  Esse caso de uso é destinado ao gestor da Engrena que deseja visualizar o desempenho de um membro ou alguma área.
+\item UC06- Assinalar \textit{status} das tarefas \\
+  Esse caso de uso é destinado aos funcionários da Engrena, que poderão assinalar a porcentagem de conclusão de uma tarefa.
+\end{itemize}
