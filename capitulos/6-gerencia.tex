@@ -108,3 +108,166 @@ Havendo uma concordância entre um representante dos \textit{stakeholders} e os 
 \subsubsection{Fluxos de Trabalho e Atividades}
 
 Embora qualquer membro do grupo de desenvolvimento do projeto possa estar trabalhando em um determinado requisito, sempre haverá um membro responsável por este, para garantir a completude do mesmo.
+
+
+\subsubsection{Matriz de rastreabilidade}
+
+Para um melhor entendimento da hierarquia do requisitos elicitados, foram descritas algumas matrizes de rastreabilidade contendo:
+
+\begin{itemize}
+  \item{Problemas X Necessidades}
+  \item{Necessidades X Características}
+  \item{Características X Requisitos}
+\end{itemize}
+
+
+% Problemas X Necessidades
+
+\begin{table}[!h]
+\centering
+\caption{Problemas X Necessidades}
+\label{Problemas_X_Necessidades_1}
+\begin{tabular}{|c|c|c|c|}
+\hline
+  & \multicolumn{3}{c|}{\textbf{Necessidades}} \\ \hline
+    \multirow{2}{*}{\textbf{Problemas}} &             & NE 1.1        & NA 1.2       \\ \cline{2-4}
+                                        & PB 1        & X             & X            \\ \hline
+\end{tabular}
+\end{table}
+
+% Necessidades X Características
+
+\begin{table}[!h]
+\centering
+\caption{Necessidades X Características}
+\label{Necessidades_X_Caracteristicas_1}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  & \multicolumn{5}{c|}{\textbf{Características}}      \\ \hline
+    \multirow{2}{*}{\textbf{Necessidades}} &        & CA 1.1.1 & CA 1.1.2 & CA 1.2.1 & CA 1.2.2 \\ \cline{2-6}
+                                                    & NE 1.1 & X        & X        &          &          \\ \cline{2-6}
+                                                    & NE 1.2 &          &          & X        & X        \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!h]
+\centering
+\caption{Necessidades X Características}
+\label{Necessidades_X_Caracteristicas_2}
+\begin{tabular}{|c|c|c|}
+\hline
+  & \multicolumn{2}{c|}{\textbf{Características}} \\ \hline
+    \multirow{3}{*}{\textbf{Necessidades}} &  & CA 1.2.3               \\ \cline{2-3}
+                                              & NE 1.1               &                        \\ \cline{2-3}
+                                              & NE 1.2               & X                      \\ \hline
+\end{tabular}
+\end{table}
+
+
+% Características X Requisitos
+
+\begin{table}[!h]
+\centering
+\caption{Características X Requisitos}
+\label{Características_X_Requisitos_1}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  & \multicolumn{5}{c|}{\textbf{Requisitos}}                    \\ \hline
+    \multirow{6}{*}{\textbf{Características}} &   & RF 1.1.1.1 & RF 1.1.1.2 & RF 1.1.1.3 & RF 1.1.1.4 \\ \cline{2-6}
+                                       & CA 1.1.1 & X          & X          & X          & X         \\ \cline{2-6}
+                                       & CA 1.1.2 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.1 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.2 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.3 &            &            &            &           \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!h]
+\centering
+\caption{Características X Requisitos}
+\label{Características_X_Requisitos_2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  & \multicolumn{5}{c|}{\textbf{Requisitos}}                    \\ \hline
+    \multirow{6}{*}{\textbf{Características}} &   & RF 1.1.1.5 & RF 1.1.1.6 & RF 1.1.1.7 & RF 1.1.1.8 \\ \cline{2-6}
+                                       & CA 1.1.1 & X          & X          & X          & X         \\ \cline{2-6}
+                                       & CA 1.1.2 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.1 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.2 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.3 &            &            &            &           \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!h]
+\centering
+\caption{Características X Requisitos}
+\label{Características_X_Requisitos_3}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  & \multicolumn{5}{c|}{\textbf{Requisitos}}                    \\ \hline
+    \multirow{6}{*}{\textbf{Características}} &   & RF 1.1.2.1 & RF 1.1.2.2 & RF 1.1.2.3 & RF 1.2.1.1 \\ \cline{2-6}
+                                       & CA 1.1.1 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.1.2 & X          & X          & X          &           \\ \cline{2-6}
+                                       & CA 1.2.1 &            &            &            &  X        \\ \cline{2-6}
+                                       & CA 1.2.2 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.3 &            &            &            &           \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!h]
+\centering
+\caption{Características X Requisitos}
+\label{Características_X_Requisitos_4}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  & \multicolumn{5}{c|}{\textbf{Requisitos}}                    \\ \hline
+    \multirow{6}{*}{\textbf{Características}} &   & RF 1.2.1.2 & RF 1.2.1.3 & RF 1.2.1.4 & RF 1.2.1.5 \\ \cline{2-6}
+                                       & CA 1.1.1 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.1.2 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.1 & X          & X          & X          &  X        \\ \cline{2-6}
+                                       & CA 1.2.2 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.3 &            &            &            &           \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!h]
+\centering
+\caption{Características X Requisitos}
+\label{Características_X_Requisitos_5}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+  & \multicolumn{5}{c|}{\textbf{Requisitos}}                    \\ \hline
+    \multirow{6}{*}{\textbf{Características}} &   & RF 1.2.1.6 & RF 1.2.2.1 & RF 1.2.2.2 & RF 1.2.3.1 \\ \cline{2-6}
+                                       & CA 1.1.1 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.1.2 &            &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.1 & X          &            &            &           \\ \cline{2-6}
+                                       & CA 1.2.2 &            & X          & X          &           \\ \cline{2-6}
+                                       & CA 1.2.3 &            &            &            & X         \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[!h]
+\centering
+\caption{Características X Requisitos}
+\label{Características_X_Requisitos_6}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+  & \multicolumn{4}{c|}{\textbf{Requisitos}}                    \\ \hline
+    \multirow{6}{*}{\textbf{Características}} &   & RF 1.2.3.2 & RF 1.2.3.3 & RF 1.2.3.4 \\ \cline{2-5}
+                                       & CA 1.1.1 &            &            &            \\ \cline{2-5}
+                                       & CA 1.1.2 &            &            &            \\ \cline{2-5}
+                                       & CA 1.2.1 &            &            &            \\ \cline{2-5}
+                                       & CA 1.2.2 &            &            &            \\ \cline{2-5}
+                                       & CA 1.2.3 & X          & X          & X          \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
