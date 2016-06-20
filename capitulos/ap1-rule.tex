@@ -1274,12 +1274,75 @@ Fluxo Principal
 Redirecionamento para o perfil da tarefa. Ao final do caso de uso, o usuário deve ser redirecionado para a página da tarefa.
 
 
+\section{UC05 - Gerar gráficos de produtividade de membros e área}
+
+\subsection{Descrição}
+
+Esse caso de uso é destinado ao gestor da Engrena que deseja visualizar o desempenho de um membro ou alguma área para ser capaz de tomar as melhores decisões estratégicas possíveis.
+
+\subsection{Atores}
+
+\begin{itemize}
+  \item{Gestores da Engrena}
+\end{itemize}
+
+
+\subsection{Fluxo de Eventos}
+
+Condições Prévias
+\begin{itemize}
+  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema com sua conta de usuário comum.}
+\end{itemize}
+
+Fluxo Principal
+
+\begin{enumerate}
+  \item{O usuário entra na página de um membro ou área}
+  \item{O sistema apresenta um gráfico que representará a produtividade da área}
+  \item{O caso de uso encerrado}
+\end{enumerate}
 
 
 
 
+\section{UC06 - Assinalar status das tarefas}
+
+\subsection{Descrição}
+
+Esse caso de uso é destinado aos funcionários da Engrena, que poderão assinalar a porcentagem de conclusão de uma tarefa
+
+\subsection{Atores}
+
+\begin{itemize}
+  \item{Funcionários da Engrena}
+\end{itemize}
 
 
+\subsection{Fluxo de Eventos}
+
+Condições Prévias
+\begin{itemize}
+  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema com sua conta de usuário comum}
+\end{itemize}
+
+
+Fluxo Principal
+
+\begin{enumerate}
+  \item{O usuário segue para a sua área de tarefas, onde estarão todas que foram atribuídas ao mesmo}
+  \item{O Usuário clica no nome de uma tarefa}
+  \item{O sistema redireciona para a página daquela tarefa}
+  \item{O Usuário atualiza o campo de status na página principal}
+  \item{O sistema valida a entrada do usuário [RN05]}
+  \item{Uma mensagem de confirmação aparece}
+  \item{O Usuário confirma a ação}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
+
+
+\subsection{Condições Posteriores}
+
+Redirecionamento para o perfil da tarefa. Ao final do caso de uso, o usuário deve ser redirecionado para a página da tarefa
 
 
 
