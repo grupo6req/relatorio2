@@ -1166,3 +1166,88 @@ Fluxo Alternativos
 Redirecionamento para o perfil da área. Ao final do caso de uso, o usuário deve ser redirecionado para a página da área
 
 
+\section{UC03 - Manter tarefas}
+
+\subsection{Descrição}
+
+Este caso de uso é predominantemente destinado aos administradores que poderão criar tarefas e concedê-las aos usuários, que por sua vez, poderão visualizá-las.
+
+
+\subsection{Atores}
+
+\begin{itemize}
+  \item{Gestores da Engrena}
+  \item{Usuários da aplicação que seriam os funcionários da engrena}
+\end{itemize}
+
+\subsection{Fluxo de eventos}
+
+Condições Prévias
+\begin{itemize}
+  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar no sistema como administrador, tendo total acesso à todas as partes da aplicação. Ou deve estar no sistema como usuário, tendo acesso apenas a visualização das suas tarefas}
+\end{itemize}
+
+
+
+Fluxo principal
+
+\begin{enumerate}
+  \item{O usuário segue para a página de tarefas, onde estarão listadas as que já existem com as opções de excluir [FA01], editar [FA02] e mostrar [FA03] a tarefa. O usuário deseja cadastrar uma nova área}
+  \item{O usuário preenche os campos do formulário}
+  \item{O sistema valida as informações [RN03]}
+  \item{O sistema redireciona o usuário para o perfil das tarefas, onde estarão presentes as opções}
+\end{enumerate}
+
+
+Fluxos Alternativos
+
+[FA01] - Excluir uma tarefa
+\begin{enumerate}
+  \item{O usuário deseja excluir uma tarefa}
+  \item{Uma mensagem de confirmação aparece}
+  \item{O usuário confirma a ação}
+  \item{O sistema então, desabilita a área, realizando a exclusão lógica}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
+
+
+[FA02] - Editar uma tarefa
+\begin{enumerate}
+  \item{O usuário deseja editar uma tarefa}
+  \item{O sistema carrega o formulário de dados}
+  \item{O usuário altera as informações nos campos que desejar}
+  \item{O usuário salva as mudanças por meio de um botão}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
+
+
+[FA03] - Mostrar uma tarefa
+\begin{enumerate}
+  \item{O Usuário solicita ao sistema as suas tarefas}
+  \item{O Usuário seleciona uma de suas tarefas}
+  \item{O sistema redireciona o Usuário para a página com as informações da tarefa}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
+
+
+\subsection{Condições Posteriores}
+
+Redirecionamento para o perfil da tarefa. Ao final do caso de uso, o usuário, administrador ou usuário deve ser redirecionado para a página da tarefa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
