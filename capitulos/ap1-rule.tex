@@ -1235,11 +1235,43 @@ Fluxos Alternativos
 Redirecionamento para o perfil da tarefa. Ao final do caso de uso, o usuário, administrador ou usuário deve ser redirecionado para a página da tarefa.
 
 
+\section{UC04 - Atribuir tarefas à funcionário}
+
+\subsection{Descrição}
+
+Esse caso de uso é destinado gestores da Engrena, que poderão assinalar responsáveis para tarefas.
+
+\subsection{Atores}
+
+\begin{itemize}
+  \item{Gestores da Engrena}
+\end{itemize}
 
 
+\subsection{Fluxo de Eventos}
+
+Condições Prévias
+\begin{itemize}
+  \item{Para realizar todas as funcionalidades previstas nesse caso de uso, o usuário deve estar logado no sistema como administrador}
+\end{itemize}
+
+Fluxo Principal
+\begin{enumerate}
+  \item{O Usuário segue para a parte de tarefas do sistema}
+  \item{O Usuário clica no nome de uma tarefa}
+  \item{O sistema redireciona para a página daquela tarefa}
+  \item{O Usuário clica no campo que indica o responsável pela tarefa}
+  \item{O Usuário preenche o novo responsável pela tarefa}
+  \item{O sistema valida a informação [RN04]}
+  \item{Uma mensagem de confirmação aparece}
+  \item{O Usuário confirma a ação}
+  \item{O caso de uso é encerrado}
+\end{enumerate}
 
 
+\subsection{Condições Posteriores}
 
+Redirecionamento para o perfil da tarefa. Ao final do caso de uso, o usuário deve ser redirecionado para a página da tarefa.
 
 
 
